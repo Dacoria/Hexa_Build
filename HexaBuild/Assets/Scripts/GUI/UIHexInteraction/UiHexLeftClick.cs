@@ -19,16 +19,46 @@ public class UiHexLeftClick : MonoBehaviour
         {
             return;
         }     
+
+        if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            HexGrid.instance.DisableAllHighlightsOnHex();
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
+            
             if (UiHoverOverHex.Instance.HexHoveredOver != null)
             {
-                Debug.Log("CLICK ON HEX!");
+                ClickOnTile(UiHoverOverHex.Instance.HexHoveredOver);
             }
             else
             {
                 Debug.Log("CLICK ON NOTHING!");
             }
+        }
+    }
+
+    private static void ClickOnTile(Hex hexSelected)
+    {
+        if (hexSelected.HexObjectOnTileType != HexObjectOnTileType.None)
+        {
+            // geen leeg veld? dan niet selecten
+            Debug.Log("CLICK ON START HEX (Castle) " + hexSelected.gameObject.name);
+            hexSelected.EnableHighlight(HighlightColorType.Cyan);
+        }
+        else
+        {
+            if(hexSelected.FogIsActive())
+            {
+                hexSelected.EnableHighlight(HighlightColorType.Red);
+            }
+            else
+            {
+                hexSelected.EnableHighlight(HighlightColorType.Green);
+            }
+
+            Debug.Log("CLICK ON HEX " + hexSelected.gameObject.name);
         }
     }
 }

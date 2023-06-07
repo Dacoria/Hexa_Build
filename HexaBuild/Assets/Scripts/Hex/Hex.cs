@@ -29,14 +29,12 @@ public class Hex : BaseEventCallback
     public bool InitFogIsActive;
     public bool FogIsActive() => fogOnHex?.FogIsActive() == true;
 
-    private HexSurfaceType initHexSurfaceType;
 
     new void Awake()
     {
         base.Awake();
         this.hexSurfaceScript = gameObject.AddComponent<HexSurfaceScript>();
 
-        initHexSurfaceType = HexSurfaceType;
         OrigPosition = this.transform.position;
     }
 

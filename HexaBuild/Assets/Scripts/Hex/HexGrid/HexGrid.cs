@@ -25,9 +25,14 @@ public class HexGrid : BaseEventCallback
         var hexes = FindObjectsOfType<Hex>();        
         var hexesSorted = hexes.OrderBy(x => Vector3.Distance(x.transform.position, new Vector3(0,0,0))).ToList();
 
+        var counter = 0;
         foreach (var hex in hexesSorted)
         {
-            if(hexTileDict.ContainsKey(hex.HexCoordinates))
+            counter++;
+            hex.gameObject.name = "Hex" + counter; // naam van go
+            hex.transform.SetSiblingIndex(counter - 1); // volgorde in hierarchie
+
+            if (hexTileDict.ContainsKey(hex.HexCoordinates))
             {
                 throw new Exception(hex.gameObject.name + " + " + hexTileDict[hex.HexCoordinates].gameObject.name);
             }
@@ -38,7 +43,6 @@ public class HexGrid : BaseEventCallback
             }    
 
             hexTileDict[hex.HexCoordinates] = hex;
-
             Instantiate(FogPrefab, hex.transform);
 
             var lerp = hex.gameObject.AddComponent<LerpMovement>();
@@ -55,10 +59,10 @@ public class HexGrid : BaseEventCallback
             HexGridLoaded = hexTileDict.Values.All(x => Vector3.Distance(x.OrigPosition, x.transform.position) < 0.01f);
             if(HexGridLoaded)
             {
-                AE.GridLoaded?.Invoke(); 
+                AE.GridLoaded?.Invoke();
             }
         }
-    }
+    }    
 
     public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool excludeObstacles = true, bool? withUnitOnHex = null, bool onlyMoveInOneDirection = false, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
     {
@@ -76,6 +80,14 @@ public class HexGrid : BaseEventCallback
 
     // voor A*
     public float Cost(Vector3Int current, Vector3Int directNeighbor) => 1;
+
+    public void DisableAllHighlightsOnHex()
+    {
+        foreach (var hex in hexTileDict.Values)
+        {
+            hex.DisableHighlight();
+        }
+    }
 
     public Hex GetHexAt(Vector3Int hexCoordinates)
     {

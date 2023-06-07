@@ -26,6 +26,7 @@ public class Hex : BaseEventCallback
 
     private HexSurfaceScript hexSurfaceScript;
 
+    public bool InitFogIsActive;
     public bool FogIsActive() => fogOnHex?.FogIsActive() == true;
 
     private HexSurfaceType initHexSurfaceType;

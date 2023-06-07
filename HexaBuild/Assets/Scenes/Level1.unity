@@ -210,6 +210,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2601154551605823385, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
     - {fileID: 80543977818892296, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -468,6 +473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -887,6 +897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -1064,6 +1079,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -1165,6 +1185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1280,6 +1305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1478,6 +1508,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -1585,6 +1620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1703,6 +1743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -1801,6 +1846,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -1890,6 +1940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2293,6 +2348,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -2396,6 +2456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -2752,6 +2817,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -3056,6 +3126,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -3312,6 +3387,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -3406,6 +3486,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3669,6 +3754,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -3771,6 +3861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3952,6 +4047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4236,6 +4336,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -4401,6 +4506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -4590,6 +4700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -4707,6 +4822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4999,6 +5119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -5251,6 +5376,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -5366,6 +5496,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 7
       objectReference: {fileID: 0}
@@ -5469,6 +5604,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -5560,6 +5700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -5823,6 +5968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -5943,6 +6093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -6058,6 +6213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -6170,6 +6330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6354,6 +6519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6904,6 +7074,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -7305,6 +7480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -7491,6 +7671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2601154551605823385, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -7734,6 +7919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -8179,6 +8369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -8353,6 +8548,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -8445,6 +8645,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -8536,6 +8741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8651,6 +8861,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 7
       objectReference: {fileID: 0}
@@ -8759,6 +8974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -8938,6 +9158,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -9044,6 +9269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9224,6 +9454,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -9377,6 +9612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -9986,6 +10226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -10254,6 +10499,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -10363,6 +10613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -10460,6 +10715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -10567,6 +10827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10746,6 +11011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -11044,6 +11314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11372,6 +11647,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -11550,6 +11830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -11657,6 +11942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11843,6 +12133,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -12009,6 +12304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -12129,6 +12429,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2601154551605823385, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
     - {fileID: 80543977818892296, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -12224,6 +12529,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -12247,7 +12557,6 @@ GameObject:
   - component: {fileID: 1123141074}
   - component: {fileID: 1123141073}
   - component: {fileID: 1123141072}
-  - component: {fileID: 1123141071}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: 
@@ -12255,18 +12564,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1123141071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123141070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f3cbd432de2bd84ea8cd48f44f4be16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1123141072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12462,6 +12759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12994,6 +13296,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -13148,6 +13455,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -13227,6 +13539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -13556,6 +13873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13921,6 +14243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -14098,6 +14425,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -14270,6 +14602,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -14369,6 +14706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14623,6 +14965,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -14784,6 +15131,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -14884,6 +15236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14999,6 +15356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 7
       objectReference: {fileID: 0}
@@ -15102,6 +15464,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -15181,6 +15548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -15293,6 +15665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15480,6 +15857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -15578,6 +15960,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -15674,6 +16061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15799,6 +16191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -15901,6 +16298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -16465,6 +16867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -16807,6 +17214,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -16983,6 +17395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17234,6 +17651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -17332,6 +17754,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -17421,6 +17848,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17675,6 +18107,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -17782,6 +18219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17909,6 +18351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -18011,6 +18458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -18191,6 +18643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -18295,6 +18752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2601154551605823385, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -18474,6 +18936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18661,6 +19128,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -18826,6 +19298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -19450,6 +19927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexObjectOnTileType
       value: 0
       objectReference: {fileID: 0}
@@ -19660,6 +20142,11 @@ PrefabInstance:
       propertyPath: HexSurfaceType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -19825,6 +20312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -20515,6 +21007,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStructureType
       value: 0
       objectReference: {fileID: 0}
@@ -20617,6 +21114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -20771,6 +21273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}
@@ -20949,6 +21456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexSurfaceType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: InitFogIsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 485939510151966597, guid: eda0d380e5ea7d54287af7b0ab280b7f, type: 3}

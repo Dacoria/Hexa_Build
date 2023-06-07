@@ -2,13 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class FogOnHex : MonoBehaviour
+public class FogOnHex : BaseEventCallback
 {
     public ParticleSystem ParticleSystem; // wordt geset door ander script bij het aanmaken van dit script
+    [ComponentInject] private Hex hex;
+
 
     private void Start()
     {
-        this.SetFog(false);
+        this.SetFog(hex.InitFogIsActive);
     }
 
     public void SetFog(bool isFogActive)

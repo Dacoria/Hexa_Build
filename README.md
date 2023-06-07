@@ -1,1 +1,1 @@
-# Hexa_Build
+# Stratego

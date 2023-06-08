@@ -23,6 +23,7 @@ public class UiHexLeftClick : MonoBehaviour
         if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             HexGrid.instance.DisableAllHighlightsOnHex();
+            HexSurfaceButtonsHandler.instance.RemoveSurfaceButtons();
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -34,7 +35,7 @@ public class UiHexLeftClick : MonoBehaviour
             }
             else
             {
-                Debug.Log("CLICK ON NOTHING!");
+                //Debug.Log("CLICK ON NOTHING!");                
             }
         }
     }
@@ -44,7 +45,7 @@ public class UiHexLeftClick : MonoBehaviour
         if (hexSelected.HexObjectOnTileType != HexObjectOnTileType.None)
         {
             // geen leeg veld? dan niet selecten
-            Debug.Log("CLICK ON START HEX (Castle) " + hexSelected.gameObject.name);
+            //Debug.Log("CLICK ON START HEX (Castle) " + hexSelected.gameObject.name);
             hexSelected.EnableHighlight(HighlightColorType.Cyan);
         }
         else
@@ -56,9 +57,13 @@ public class UiHexLeftClick : MonoBehaviour
             else
             {
                 hexSelected.EnableHighlight(HighlightColorType.Green);
+                if (hexSelected.CanChangeSurfaceType())
+                {
+                    HexSurfaceButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
+                }
             }
 
-            Debug.Log("CLICK ON HEX " + hexSelected.gameObject.name);
+            //Debug.Log("CLICK ON HEX " + hexSelected.gameObject.name);
         }
     }
 }

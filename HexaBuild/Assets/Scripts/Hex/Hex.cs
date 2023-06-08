@@ -1,9 +1,6 @@
 using System.Linq;
 using System.Collections;
 using UnityEngine;
-using System;
-using System.Collections.Generic;
-using UnityEngine.EventSystems;
 
 [SelectionBase]
 public class Hex : BaseEventCallback
@@ -69,7 +66,6 @@ public class Hex : BaseEventCallback
     public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)
     {
         hexSurfaceScript.HexSurfaceTypeChanged(changeToType);
-
         if (alsoChangeType)
         {
             HexSurfaceType = changeToType;

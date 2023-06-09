@@ -1,12 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class FogOnHex : BaseEventCallback
 {
     public ParticleSystem ParticleSystem; // wordt geset door ander script bij het aanmaken van dit script
     [ComponentInject] private Hex hex;
-
 
     private void Start()
     {

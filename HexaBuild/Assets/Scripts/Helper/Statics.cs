@@ -10,5 +10,6 @@
 
     public static string RESOURCE_PATH_MATERIAL_TILE_TYPES = "Hex/HexTypeMaterials";
     public static string RESOURCE_PATH_MATERIAL_COLORS = "Colors";
-    public static string RESOURCE_PATH_SPRITE_ABILITY = "Sprites/Hex";
+    public static string RESOURCE_PATH_SPRITE_HEX = "Sprites/Hex";
+    public static string RESOURCE_PATH_SPRITE = "Sprites";
 }

@@ -12,7 +12,6 @@ public class HexNeighbours
         Dictionary<Vector3Int, Hex> hexTileDict, 
         Vector3Int hexCoordinates, 
         int range, 
-        bool excludeObstacles, 
         bool onlyMoveInOneDirection, 
         bool showOnlyFurthestRange, 
         bool includeStartHex, 
@@ -24,11 +23,7 @@ public class HexNeighbours
         if (showOnlyFurthestRange)
         {            
             neighbours = neighbours.Where(neighbour => Direction.GetRangeFromCoordinates(hexCoordinates, neighbour) == range).ToList();
-        }
-        if(excludeObstacles)
-        {
-            neighbours = neighbours.Where(neighbour => !neighbour.GetHex().IsObstacle()).ToList();
-        }        
+        }      
         if (excludeWater)
         {
             neighbours = neighbours.Where(neighbour => !neighbour.GetHex().HexSurfaceType.IsWater()).ToList();

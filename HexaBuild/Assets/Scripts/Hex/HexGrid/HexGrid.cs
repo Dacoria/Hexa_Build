@@ -20,7 +20,7 @@ public class HexGrid : BaseEventCallback
         instance = this;
     }
 
-    private void Start()
+    public void LoadGrid()
     {
         var hexes = FindObjectsOfType<Hex>();        
         var hexesSorted = hexes.OrderBy(x => Vector3.Distance(x.transform.position, new Vector3(0,0,0))).ToList();
@@ -64,13 +64,12 @@ public class HexGrid : BaseEventCallback
         }
     }    
 
-    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool excludeObstacles = true, bool? withUnitOnHex = null, bool onlyMoveInOneDirection = false, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
+    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool? withUnitOnHex = null, bool onlyMoveInOneDirection = false, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
     {
         return hexNeighbours.GetNeighboursFor(
             hexTileDict: hexTileDict,
             hexCoordinates: hexCoordinates,
             range: range,
-            excludeObstacles: excludeObstacles,
             onlyMoveInOneDirection: onlyMoveInOneDirection,
             showOnlyFurthestRange: showOnlyFurthestRange,
             includeStartHex: includeStartHex,

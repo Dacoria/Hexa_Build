@@ -41,24 +41,8 @@ public static class Direction
         }
     }
 
-    public static List<Vector3Int> GetDirectionsList(Hex hex) => GetDirectionsList(hex.HexCoordinates.z);
     public static Dictionary<DirectionType, Vector3Int> GetDirectionsDict(Vector3Int coor) => GetDirectionsDict(coor.z);
 
-    public static List<DirectionType> DeriveDirections(this Vector3Int hexFromCoor, Vector3Int hexToCoor)
-    {
-        if (hexFromCoor == hexToCoor) { return new List<DirectionType>(); }
-
-        var path = GetPathToHex(hexFromCoor, hexToCoor);
-        var result = new List<DirectionType> { GetDirectionFromCoordinates(hexFromCoor, path[0]) };
-
-        for (var i = 1; i < path.Count(); i++)
-        {
-            var nextDirection = GetDirectionFromCoordinates(path[i - 1], path[i - 0]);
-            result.Add(nextDirection);
-        }
-
-        return result;
-    }
 
     private static DirectionType GetDirectionFromCoordinates(Vector3Int hexFromCoor, Vector3Int hexToCoor)
     {
@@ -73,7 +57,7 @@ public static class Direction
 
     private static List<Vector3Int> GetPathToHex(Vector3Int from, Vector3Int to)
     {
-        var astar = new AStarSearch(from, to, excludeObstaclesFromPath: false);
+        var astar = new AStarSearch(from, to);
         var path = astar.FindPath();
         return path;
     }

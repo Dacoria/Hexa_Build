@@ -4,13 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class HexSurfaceButtonsHandler : BaseEventCallback
+public class HexButtonsHandler : BaseEventCallback
 {
     [HideInInspector]
-    public static HexSurfaceButtonsHandler instance;
+    public static HexButtonsHandler instance;
 
     public HexSurfaceButtonScript HexSurfaceButtonPrefab;
-    public List<HexSurfaceButtonScript> activeHexSurfaceButtons = new List<HexSurfaceButtonScript> ();
+    public List<HexSurfaceButtonScript> activeHexSurfaceButtons = new List<HexSurfaceButtonScript>();
+
+    public DiscoverButtonScript DiscoverButtonPrefab;
+    public List<DiscoverButtonScript> activeDiscoverSurfaceButtons = new List<DiscoverButtonScript>();
 
     [ComponentInject] private CanvasGroup canvasGroup;
 
@@ -23,7 +26,7 @@ public class HexSurfaceButtonsHandler : BaseEventCallback
 
     public void LoadSurfaceButtons(Hex selectedHex)
     {
-        ResetActiveHexSurfaceButtons();
+        ResetActiveButtons();
 
         foreach (var surfaceType in selectedHex.AllowedHexSurfaceTypes())
         {
@@ -35,15 +38,30 @@ public class HexSurfaceButtonsHandler : BaseEventCallback
         MonoHelper.instance.FadeIn(canvasGroup, 1f);
     }
 
-    public void RemoveSurfaceButtons()
+    public void LoadDiscoverButtons(Hex selectedHex)
     {
-        ResetActiveHexSurfaceButtons();
+        ResetActiveButtons();
+
+        // meer acties voor discover? for each hier
+        var discoverButtonGo = Instantiate(DiscoverButtonPrefab, transform);
+        discoverButtonGo.SetDiscoverButton(selectedHex);
+        activeDiscoverSurfaceButtons.Add(discoverButtonGo);
+
+        MonoHelper.instance.FadeIn(canvasGroup, 1f);
+    }
+
+    public void RemoveAllButtons()
+    {
+        ResetActiveButtons();
         canvasGroup.alpha = 0;
     }
 
-    private void ResetActiveHexSurfaceButtons()
+    private void ResetActiveButtons()
     {
         activeHexSurfaceButtons.ForEach(hexSurfaceButton => Destroy(hexSurfaceButton.gameObject));
         activeHexSurfaceButtons.Clear();
+
+        activeDiscoverSurfaceButtons.ForEach(button => Destroy(button.gameObject));
+        activeDiscoverSurfaceButtons.Clear();
     }
 }

@@ -1,0 +1,62 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+public class ResourceHandler: MonoBehaviour
+{
+    public static ResourceHandler instance;
+    private List<ResourceAmount> currentResources;
+    public IReadOnlyList<ResourceAmount> CurrentResourcesRO => currentResources.AsReadOnly();
+
+    private ResourceAmount discoverHexCost = new ResourceAmount(10, ResourceType.Energy);
+
+    private void Awake()
+    {
+        this.ComponentInject();
+        instance = this;       
+        currentResources = new List<ResourceAmount>();
+    }
+
+    public void SetInitResources(List<ResourceAmount> startingResources)
+    {
+        currentResources = startingResources;
+    }
+
+    public void AddResource(ResourceType type, int amount)
+    {
+        var resource = currentResources.Single(x => x.Type == type);
+        resource.Amount += amount;        
+    }
+
+    public void RemoveResource(ResourceType type, int amount)
+    {
+        var resourceInStock = currentResources.Single(x => x.Type == type);
+        resourceInStock.Amount -= amount;
+    }  
+
+    public bool HasResourcesForHexSurfaceChange(HexSurfaceType newSurfaceType)
+    {
+        foreach (var resourceCost in newSurfaceType.BuildCost())
+        {
+            var resourceTypeInStock = currentResources.Single(x => x.Type == resourceCost.Type);
+            if (resourceTypeInStock.Amount < resourceCost.Amount)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public bool HasResourcesToDiscoverHex()
+    {
+        var resourceInStock = currentResources.Single(x => x.Type == discoverHexCost.Type).Amount;
+        return resourceInStock >= discoverHexCost.Amount;
+    }
+
+    public void RemoveResourcesToDiscoverHex()
+    {
+        var resourceInStock = currentResources.Single(x => x.Type == discoverHexCost.Type);
+        resourceInStock.Amount -= discoverHexCost.Amount;
+    }
+}

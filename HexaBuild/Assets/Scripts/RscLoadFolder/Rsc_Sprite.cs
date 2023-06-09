@@ -6,7 +6,7 @@ public static partial class Rsc
 {
     private static List<string> spriteRscList = new List<string>
     {
-        Statics.RESOURCE_PATH_SPRITE_ABILITY
+        Statics.RESOURCE_PATH_SPRITE,
     };
 
     private static Dictionary<string, Sprite> __spriteMap;
@@ -21,6 +21,14 @@ public static partial class Rsc
         }
     }
 
-    public static Sprite Get(this Dictionary<string, Sprite> dict, string key) => 
-        dict.Single(x => key == x.Key).Value;
+    public static Sprite Get(this Dictionary<string, Sprite> dict, string key)
+    {
+        var sprite = dict[key];
+        if(sprite == null)
+        {
+            throw new System.Exception("No sprite for key: " + key);
+        }
+
+        return sprite;
+    }
 }

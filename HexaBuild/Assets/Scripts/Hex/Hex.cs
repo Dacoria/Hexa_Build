@@ -62,7 +62,6 @@ public class Hex : BaseEventCallback
         ChangeHexSurfaceType(HexSurfaceType, alsoChangeType: false);
     }
 
-    public bool IsObstacle() => HexSurfaceType.IsObstacle();
     public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)
     {
         hexSurfaceScript.HexSurfaceTypeChanged(changeToType);

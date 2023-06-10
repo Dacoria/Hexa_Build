@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a488de57b9cc8654fb2a18f1c964867b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HexSurfaceType: 0
+  HexSurfaceType: 2
   HexObjectOnTileType: 0
   OrigPosition: {x: 0, y: 0, z: 0}
   InitFogIsActive: 0

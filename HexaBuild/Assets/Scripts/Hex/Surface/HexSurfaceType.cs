@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 
 public enum HexSurfaceType
-{
+{   Barren,
     Simple_Plain,
     Simple_Rock,
     Simple_Sand,
@@ -29,6 +29,7 @@ public enum HexSurfaceType
     SandRock,
     Water_Light,
     Blue_3D_Blocks,
+    Transparant
 }
 
 public static class HexSurfaceExt

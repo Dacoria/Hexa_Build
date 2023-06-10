@@ -9,8 +9,6 @@ public class HexGrid : BaseEventCallback
 
     public static HexGrid instance;
 
-    public FogOnHex FogPrefab;
-
     private HexNeighbours hexNeighbours = new HexNeighbours();
     public bool GridIsLoaded;
 
@@ -43,7 +41,6 @@ public class HexGrid : BaseEventCallback
             }    
 
             hexTileDict[hex.HexCoordinates] = hex;
-            Instantiate(FogPrefab, hex.transform);
 
             var lerp = hex.gameObject.AddComponent<LerpMovement>();
             lerp.MoveToDestination(hex.transform.position, duration: 1.5f, startPosition: hex.transform.position + new Vector3(0, -100, 0), delayedStart: hex.transform.position.x * 0.08f);

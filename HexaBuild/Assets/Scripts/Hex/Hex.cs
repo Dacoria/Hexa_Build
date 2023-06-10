@@ -24,7 +24,7 @@ public class Hex : BaseEventCallback
     private HexSurfaceScript hexSurfaceScript;
 
     public bool InitFogIsActive;
-    public bool FogIsActive() => fogOnHex?.FogIsActive() == true;
+    public bool FogIsActive() => HexSurfaceType == HexSurfaceType.Simple_Water;
 
 
     new void Awake()
@@ -33,17 +33,12 @@ public class Hex : BaseEventCallback
         this.hexSurfaceScript = gameObject.AddComponent<HexSurfaceScript>();
 
         OrigPosition = this.transform.position;
-    }
 
-    private IEnumerator Start()
-    {
-        while (fogOnHex == null)
+        if(InitFogIsActive)
         {
-            yield return Wait4Seconds.Get(0.2f);
-            fogOnHex = GetComponentInChildren<FogOnHex>();
+            ChangeHexSurfaceType(HexSurfaceType.Simple_Water);
         }
     }
-
 
     public void EnableHighlight(HighlightColorType type) => highlightMove.CurrentColorHighlight = type;
     public void DisableHighlight() => highlightMove.CurrentColorHighlight = HighlightColorType.None;
@@ -55,11 +50,9 @@ public class Hex : BaseEventCallback
         }
     }
 
-    public void SetFogOnHex(bool fogEnabled)
+    public void DiscoverHex()
     {
-        fogOnHex.SetFog(fogEnabled);
-
-        ChangeHexSurfaceType(HexSurfaceType, alsoChangeType: false);
+        ChangeHexSurfaceType(HexSurfaceType.Simple_Water);
     }
 
     public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)

@@ -35,7 +35,7 @@ public class HexMutateHandler : MonoBehaviour
         }
 
         ResourceHandler.instance.RemoveResourcesToDiscoverHex();
-        hex.SetFogOnHex(false);
+        hex.DiscoverHex();
         // TODO MONSTER?
     }
 

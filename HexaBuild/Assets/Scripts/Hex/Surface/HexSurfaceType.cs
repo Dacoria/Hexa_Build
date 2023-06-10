@@ -3,12 +3,10 @@
 using System.Collections.Generic;
 
 public enum HexSurfaceType
-{   Barren,
-    Simple_Plain,
-    Simple_Rock,
-    Simple_Sand,
-    Simple_Water,
+{   
+    Barren,    
     Big_Brown_Stones,
+    Blue_3D_Blocks,
     Bricks,
     Desert_Sand,
     Flowers,
@@ -22,14 +20,18 @@ public enum HexSurfaceType
     Purple_Crystal,
     Sand_Dirt,
     Snow,
-    Snow_Rocks,
+    Snow_Rocks,    
+    SandRock,
+    Simple_Plain,
+    Simple_Rock,
+    Simple_Sand,
+    Simple_Water,
+    Transparant,
     Water_Deep,
+    Water_Light,
     Water_Ice_Cracked,
     Yellow_Stone,
-    SandRock,
-    Water_Light,
-    Blue_3D_Blocks,
-    Transparant
+
 }
 
 public static class HexSurfaceExt
@@ -60,12 +62,12 @@ public static class HexSurfaceExt
 
     public static bool IsBarren(this HexSurfaceType surfaceType)
     {
-        return surfaceType == HexSurfaceType.Simple_Sand;
+        return surfaceType == HexSurfaceType.Barren;
     }
 
     public static bool CanBeDiscovered(this Hex hex)
     {
-        return hex.FogIsActive();
+        return hex.HexSurfaceType == HexSurfaceType.Transparant;
     }
 
     public static bool CanBuildOn(this Hex hex)

@@ -208,7 +208,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -472,7 +472,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -893,7 +893,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1077,7 +1077,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1184,7 +1184,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1304,7 +1304,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1504,7 +1504,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1619,7 +1619,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1739,7 +1739,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1844,7 +1844,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1939,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2346,7 +2346,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2455,7 +2455,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2688,7 +2688,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2995,7 +2995,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3256,7 +3256,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3358,7 +3358,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3623,7 +3623,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3733,7 +3733,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4008,7 +4008,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4596,7 +4596,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4767,7 +4767,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4958,7 +4958,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 0
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5083,7 +5083,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5377,7 +5377,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5636,7 +5636,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5754,7 +5754,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5864,7 +5864,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5961,7 +5961,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6226,7 +6226,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6351,7 +6351,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6471,7 +6471,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6591,7 +6591,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6780,7 +6780,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -7258,7 +7258,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -7408,7 +7408,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: df839838ee115ff4985bf5005e33c12d, type: 2}
+      objectReference: {fileID: 2100000, guid: 2b7f5c0f0f2a9f649b2e0ee016def749, type: 2}
     - target: {fileID: 919132149155446097, guid: 3c85d460f24bc0e4e88100e3a972c4c5,
         type: 3}
       propertyPath: m_Name
@@ -7585,7 +7585,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -7779,7 +7779,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8027,7 +8027,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8437,7 +8437,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8618,7 +8618,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8715,7 +8715,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8812,7 +8812,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8929,7 +8929,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9045,7 +9045,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9228,7 +9228,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9340,7 +9340,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9524,7 +9524,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9683,7 +9683,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10216,7 +10216,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10503,7 +10503,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10615,7 +10615,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10720,7 +10720,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10832,7 +10832,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11147,7 +11147,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11450,7 +11450,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11782,7 +11782,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11963,7 +11963,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12078,7 +12078,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12268,7 +12268,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12437,7 +12437,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12564,7 +12564,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12664,7 +12664,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12896,7 +12896,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13297,7 +13297,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13456,7 +13456,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13541,7 +13541,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13875,7 +13875,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14092,7 +14092,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14276,7 +14276,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14453,7 +14453,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14558,7 +14558,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14816,7 +14816,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14980,7 +14980,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15088,7 +15088,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15205,7 +15205,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15315,7 +15315,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15400,7 +15400,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15517,7 +15517,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15706,7 +15706,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15811,7 +15811,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15913,7 +15913,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16040,7 +16040,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16150,7 +16150,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16625,7 +16625,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16959,7 +16959,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17141,7 +17141,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17270,7 +17270,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17375,7 +17375,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17470,7 +17470,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17726,7 +17726,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17841,7 +17841,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17970,7 +17970,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18080,7 +18080,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18262,7 +18262,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18374,7 +18374,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18558,7 +18558,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18749,7 +18749,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18920,7 +18920,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -19546,7 +19546,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -19763,7 +19763,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -19934,7 +19934,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -20626,7 +20626,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -20736,7 +20736,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -20895,7 +20895,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -21078,7 +21078,7 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexSurfaceType
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}

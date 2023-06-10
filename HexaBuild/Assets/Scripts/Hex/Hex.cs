@@ -19,21 +19,13 @@ public class Hex : BaseEventCallback
 
     private HexSurfaceScript hexSurfaceScript;
 
-    public bool InitFogIsActive;
-    public bool FogIsActive() => HexSurfaceType == HexSurfaceType.Simple_Water;
-
 
     new void Awake()
     {
         base.Awake();
         this.hexSurfaceScript = gameObject.AddComponent<HexSurfaceScript>();
 
-        OrigPosition = this.transform.position;
-
-        if(InitFogIsActive)
-        {
-            ChangeHexSurfaceType(HexSurfaceType.Simple_Water);
-        }
+        OrigPosition = this.transform.position;        
     }
 
     public void EnableHighlight(HighlightColorType type) => highlightMove.CurrentColorHighlight = type;
@@ -48,7 +40,7 @@ public class Hex : BaseEventCallback
 
     public void DiscoverHex()
     {
-        ChangeHexSurfaceType(HexSurfaceType.Simple_Sand);
+        ChangeHexSurfaceType(HexSurfaceType.Barren);
     }
 
     public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)

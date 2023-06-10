@@ -52,7 +52,7 @@ public class Hex : BaseEventCallback
 
     public void DiscoverHex()
     {
-        ChangeHexSurfaceType(HexSurfaceType.Simple_Water);
+        ChangeHexSurfaceType(HexSurfaceType.Simple_Sand);
     }
 
     public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)

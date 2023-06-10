@@ -65,19 +65,19 @@ public static class HexSurfaceExt
         return surfaceType == HexSurfaceType.Barren;
     }
 
-    public static bool CanBeDiscovered(this Hex hex)
+    public static bool IsDiscoverable(this HexSurfaceType surfaceType)
     {
-        return hex.HexSurfaceType == HexSurfaceType.Transparant;
+        return surfaceType == HexSurfaceType.Transparant;
     }
 
-    public static bool CanBuildOn(this Hex hex)
+    public static bool IsBuildGround(this HexSurfaceType surfaceType)
     {
-        return hex.HexSurfaceType == HexSurfaceType.Light_Grey_Stone;
+        return surfaceType == HexSurfaceType.Light_Grey_Stone;
     }
 
-    public static bool CanUseSoilOn(this Hex hex)
+    public static bool IsSoilGround(this HexSurfaceType surfaceType)
     {
-        return hex.HexSurfaceType == HexSurfaceType.Sand_Dirt;
+        return surfaceType == HexSurfaceType.Sand_Dirt;
     }
 
     public static bool IsWater(this HexSurfaceType surfaceType) => surfaceType switch

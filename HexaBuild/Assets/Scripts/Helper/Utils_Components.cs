@@ -79,4 +79,8 @@ public static partial class Utils
 
         return result;
     }
+
+    public static GameObject GetStructuresGo(this Hex hex) => Utils.GetChildGoByName(hex.gameObject, "Props");
+    public static GameObject GetMainGo(this Hex hex) => Utils.GetChildGoByName(hex.gameObject, "Main");
+
 }

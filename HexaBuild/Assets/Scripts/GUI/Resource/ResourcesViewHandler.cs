@@ -25,8 +25,7 @@ public class ResourcesViewHandler : BaseEventCallbackSlowUpdate
             rscInfoGo.SetType(resourceType);
             activeResourceInfoView.Add(rscInfoGo);
         }
-
-        MonoHelper.instance.FadeIn(canvasGroup, 1f);
+        canvasGroup.alpha = 1;
     }
 
     protected override void SlowUpdate()

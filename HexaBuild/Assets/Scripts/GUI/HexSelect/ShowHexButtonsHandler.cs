@@ -26,10 +26,13 @@ public class ShowHexButtonsHandler : BaseEventCallback
         LoadButtons<HexSurfaceType, HexSurfaceButtonScript>(relatedHex, relatedHex.AllowedHexSurfaceTypes());
     public void LoadScoutButtons(Hex relatedHex) =>
         LoadButtons<ScoutType, ScoutButtonScript>(relatedHex);
-    public void LoadUseSoilButtons(Hex relatedHex) =>
+    public void LoadPlantSoilButtons(Hex relatedHex) =>
         LoadButtons<SoilType, SoilButtonScript>(relatedHex);
     public void LoadBuildButtons(Hex relatedHex) =>
         LoadButtons<BuildingType, BuildingButtonScript>(relatedHex);
+    public void LoadHarvestSoilButtons(Hex relatedHex) =>
+        LoadButtons<SoilType, HarvestSoilButtonScript>(relatedHex, 
+            new List<SoilType> { relatedHex.HexObjectOnTileType.GetSoilType()});
 
     private void LoadButtons<T,S>(Hex selectedHex, List<T> values = null) 
         where T : Enum 

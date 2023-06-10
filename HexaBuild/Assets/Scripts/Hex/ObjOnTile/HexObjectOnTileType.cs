@@ -2,5 +2,8 @@
 public enum HexObjectOnTileType
 {
     None,
-    Castle
+    Castle,
+    Grain,
+    Tree,
+    Stone
 }

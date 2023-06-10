@@ -35,32 +35,31 @@ public class UiHexLeftClick : MonoBehaviour
     }
 
     private static void ClickOnTile(Hex hexSelected)
-    {
-        if (hexSelected.HexObjectOnTileType != HexObjectOnTileType.None)
+    {                  
+        hexSelected.EnableHighlight(HighlightColorType.Green);
+        if (hexSelected.HexSurfaceType.IsBarren())
         {
-            // geen leeg veld? dan niet selecten
-            hexSelected.EnableHighlight(HighlightColorType.Cyan);
+            ShowHexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
+        }
+        else if (HexMutateHandler.instance.CanCreateHexSurface(hexSelected))
+        {
+            ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
+        }
+        else if (HexMutateHandler.instance.CanBuildOnHex(hexSelected))
+        {
+            ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
+        }
+        else if (HexMutateHandler.instance.CanPlantOnSoilHex(hexSelected))
+        {
+            ShowHexButtonsHandler.instance.LoadPlantSoilButtons(hexSelected);
+        }
+        else if (HexMutateHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
+        {
+            ShowHexButtonsHandler.instance.LoadHarvestSoilButtons(hexSelected);
         }
         else
-        {            
-            hexSelected.EnableHighlight(HighlightColorType.Green);
-            if (hexSelected.HexSurfaceType.IsBarren())
-            {
-                ShowHexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
-            }
-            else if (hexSelected.CanBeDiscovered())
-            {
-                ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
-            }
-            else if (hexSelected.CanBuildOn())
-            {
-                ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
-            }
-            else if (hexSelected.CanUseSoilOn())
-            {
-                ShowHexButtonsHandler.instance.LoadUseSoilButtons(hexSelected);
-            }
-
+        {
+            hexSelected.EnableHighlight(HighlightColorType.Cyan);
         }
     }
 }

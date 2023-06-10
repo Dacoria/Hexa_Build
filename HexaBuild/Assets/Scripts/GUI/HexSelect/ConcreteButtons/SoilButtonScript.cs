@@ -16,7 +16,7 @@ public class SoilButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(soilType.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanUseSoilOnHex(relatedHex, soilType));
+        uiHexButton.SetAllowed(HexMutateHandler.instance.CanPlantOnSoilHex(relatedHex, soilType));
         uiHexButton.SetButtonAction(() => Click());
     }
 

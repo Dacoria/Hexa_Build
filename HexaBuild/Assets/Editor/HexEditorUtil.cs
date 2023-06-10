@@ -8,8 +8,8 @@ public static class HexEditorUtil
 {
     public static void HexSurfaceTypeChanged(Hex hex, HexSurfaceType to)
     {
-        var mainGo = GetMainGo(hex);
-        if(mainGo == null || mainGo.transform.childCount == 0)
+        var mainGo = hex.GetMainGo();
+        if (mainGo == null || mainGo.transform.childCount == 0)
         {
             return;
         }    
@@ -28,7 +28,7 @@ public static class HexEditorUtil
  
     public static void HexObjectOnTileTypeChanged(Hex hex, HexObjectOnTileType to)
     {
-        var structureGo = GetStructuresGo(hex);
+        var structureGo = hex.GetStructuresGo();
         DestroyChildrenOfGo(structureGo);
         if(to != HexObjectOnTileType.None)
         {
@@ -50,10 +50,7 @@ public static class HexEditorUtil
             var child = structuresGo.transform.GetChild(i);
             Object.DestroyImmediate(child.gameObject);
         }
-    }
-      
-    private static GameObject GetMainGo(Hex hex) => Utils.GetChildGoByName(hex.gameObject, "Main");
-    private static GameObject GetStructuresGo(Hex hex) => Utils.GetChildGoByName(hex.gameObject, "Props");
+    }      
 
     public static Hex GetHexRightUpperCorner()
     {

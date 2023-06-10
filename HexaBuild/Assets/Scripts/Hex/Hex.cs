@@ -18,12 +18,14 @@ public class Hex : BaseEventCallback
     public Vector3 OrigPosition;
 
     private HexSurfaceScript hexSurfaceScript;
+    private HexObjectOnTileScript hexObjectOnTileScript;
 
 
     new void Awake()
     {
         base.Awake();
         this.hexSurfaceScript = gameObject.AddComponent<HexSurfaceScript>();
+        this.hexObjectOnTileScript = gameObject.AddComponent<HexObjectOnTileScript>();
 
         OrigPosition = this.transform.position;        
     }
@@ -43,12 +45,15 @@ public class Hex : BaseEventCallback
         ChangeHexSurfaceType(HexSurfaceType.Barren);
     }
 
-    public void ChangeHexSurfaceType(HexSurfaceType changeToType, bool alsoChangeType = true)
+    public void ChangeHexSurfaceType(HexSurfaceType changeToType)
     {
         hexSurfaceScript.HexSurfaceTypeChanged(changeToType);
-        if (alsoChangeType)
-        {
-            HexSurfaceType = changeToType;
-        }
+        HexSurfaceType = changeToType;        
+    }
+
+    public void ChangeHexObjOnTile(HexObjectOnTileType changeToType)
+    {
+        hexObjectOnTileScript.HexObjectOnTileTypeChanged(changeToType);
+        HexObjectOnTileType = changeToType;
     }
 }

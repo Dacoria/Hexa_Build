@@ -10,10 +10,10 @@ public class HexButtonsHandler : BaseEventCallback
     public static HexButtonsHandler instance;
 
     public HexSurfaceButtonScript HexSurfaceButtonPrefab;
-    public List<HexSurfaceButtonScript> activeHexSurfaceButtons = new List<HexSurfaceButtonScript>();
+    private List<HexSurfaceButtonScript> activeHexSurfaceButtons = new List<HexSurfaceButtonScript>();
 
     public DiscoverButtonScript DiscoverButtonPrefab;
-    public List<DiscoverButtonScript> activeDiscoverSurfaceButtons = new List<DiscoverButtonScript>();
+    private List<DiscoverButtonScript> activeDiscoverSurfaceButtons = new List<DiscoverButtonScript>();
 
     [ComponentInject] private CanvasGroup canvasGroup;
 

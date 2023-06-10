@@ -16,7 +16,7 @@ public static class HexEditorUtil
 
         var getGoSurfaceBase = mainGo.transform.GetChild(0);
 
-        if (Rsc.MaterialTileMap.TryGetValue(to.ToString(), out Material result))
+        if (Load.MaterialTileMap.TryGetValue(to.ToString(), out Material result))
         {
             var meshRenderer = getGoSurfaceBase.GetComponent<MeshRenderer>();
             meshRenderer.material = result;
@@ -32,7 +32,7 @@ public static class HexEditorUtil
         DestroyChildrenOfGo(structureGo);
         if(to != HexObjectOnTileType.None)
         {
-            if (Rsc.GoEnemiesOrObjMap.TryGetValue(to.ToString(), out GameObject result))
+            if (Load.GoEnemiesOrObjMap.TryGetValue(to.ToString(), out GameObject result))
             {
                 var go = PrefabUtility.InstantiatePrefab(result, structureGo.transform) as GameObject;
                 go.transform.rotation = new Quaternion(0, 180, 0, 0);                

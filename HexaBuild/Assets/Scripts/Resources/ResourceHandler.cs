@@ -8,8 +8,6 @@ public class ResourceHandler: MonoBehaviour
     private List<ResourceAmount> currentResources;
     public IReadOnlyList<ResourceAmount> CurrentResourcesRO => currentResources.AsReadOnly();
 
-    private ResourceAmount discoverHexCost = new ResourceAmount(10, ResourceType.Energy);
-
     private void Awake()
     {
         this.ComponentInject();
@@ -34,9 +32,9 @@ public class ResourceHandler: MonoBehaviour
         resourceInStock.Amount -= amount;
     }  
 
-    public bool HasResourcesForHexSurfaceChange(HexSurfaceType newSurfaceType)
+    public bool HasResourcesForChange(List<ResourceAmount> resourceCosts)
     {
-        foreach (var resourceCost in newSurfaceType.BuildCost())
+        foreach (var resourceCost in resourceCosts)
         {
             var resourceTypeInStock = currentResources.Single(x => x.Type == resourceCost.Type);
             if (resourceTypeInStock.Amount < resourceCost.Amount)
@@ -46,17 +44,5 @@ public class ResourceHandler: MonoBehaviour
         }
 
         return true;
-    }
-
-    public bool HasResourcesToDiscoverHex()
-    {
-        var resourceInStock = currentResources.Single(x => x.Type == discoverHexCost.Type).Amount;
-        return resourceInStock >= discoverHexCost.Amount;
-    }
-
-    public void RemoveResourcesToDiscoverHex()
-    {
-        var resourceInStock = currentResources.Single(x => x.Type == discoverHexCost.Type);
-        resourceInStock.Amount -= discoverHexCost.Amount;
     }
 }

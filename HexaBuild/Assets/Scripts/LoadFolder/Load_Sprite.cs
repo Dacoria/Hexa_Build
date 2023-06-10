@@ -2,11 +2,11 @@
 using System.Linq;
 using UnityEngine;
 
-public static partial class Rsc
+public static partial class Load
 {
     private static List<string> spriteRscList = new List<string>
     {
-        Statics.RESOURCE_PATH_SPRITE,
+        Statics.LOAD_PATH_SPRITE,
     };
 
     private static Dictionary<string, Sprite> __spriteMap;
@@ -15,7 +15,7 @@ public static partial class Rsc
         get
         {
             if (__spriteMap == null)            
-                __spriteMap = RscHelper.CreateSpriteDict(spriteRscList);            
+                __spriteMap = LoadHelper.CreateSpriteDict(spriteRscList);            
 
             return __spriteMap;
         }

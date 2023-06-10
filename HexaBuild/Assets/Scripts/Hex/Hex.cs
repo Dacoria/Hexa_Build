@@ -8,10 +8,6 @@ public class Hex : BaseEventCallback
     [ComponentInject] private HexCoordinates hexCoordinates;
     [ComponentInject] private HighlightHexScript highlightMove;
 
-    private FogOnHex fogOnHex;
-
-    public HighlightColorType? GetHighlight() => highlightMove.CurrentColorHighlight;
-
     public Vector3Int HexCoordinates => hexCoordinates.OffSetCoordinates;
 
     public HexSurfaceType HexSurfaceType;

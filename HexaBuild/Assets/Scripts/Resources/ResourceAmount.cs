@@ -8,4 +8,10 @@
         Amount = amount;
         Type = type;
     }
+
+    public ResourceAmount(ResourceType type, int amount)
+    {
+        Amount = amount;
+        Type = type;
+    }
 }

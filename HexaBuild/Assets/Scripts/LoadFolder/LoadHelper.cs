@@ -3,7 +3,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public static class RscHelper
+public static class LoadHelper
 {
     public static List<T> TypeList<T>(string path) =>
         Resources

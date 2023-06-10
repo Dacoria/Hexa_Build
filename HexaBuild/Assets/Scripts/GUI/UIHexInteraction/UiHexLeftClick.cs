@@ -3,12 +3,6 @@ using UnityEngine.EventSystems;
 
 public class UiHexLeftClick : MonoBehaviour
 {
-
-    private void Awake()
-    {
-
-    }
-
     void Update()
     {  
         if(Settings.UserInterfaceIsLocked)
@@ -23,7 +17,7 @@ public class UiHexLeftClick : MonoBehaviour
         if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             HexGrid.instance.DisableAllHighlightsOnHex();
-            HexButtonsHandler.instance.RemoveAllButtons();
+            ShowHexButtonsHandler.instance.RemoveAllButtons();
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -48,21 +42,25 @@ public class UiHexLeftClick : MonoBehaviour
             hexSelected.EnableHighlight(HighlightColorType.Cyan);
         }
         else
-        {
-            if(hexSelected.FogIsActive())
+        {            
+            hexSelected.EnableHighlight(HighlightColorType.Green);
+            if (hexSelected.HexSurfaceType.IsBarren())
             {
-                hexSelected.EnableHighlight(HighlightColorType.Blue);
-                HexButtonsHandler.instance.LoadDiscoverButtons(hexSelected);
+                ShowHexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
+            }
+            else if (hexSelected.CanBeDiscovered())
+            {
+                ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
+            }
+            else if (hexSelected.CanBuildOn())
+            {
+                ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
+            }
+            else if (hexSelected.CanUseSoilOn())
+            {
+                ShowHexButtonsHandler.instance.LoadUseSoilButtons(hexSelected);
+            }
 
-            }
-            else
-            {
-                hexSelected.EnableHighlight(HighlightColorType.Green);
-                if (hexSelected.CanChangeSurfaceType())
-                {
-                    HexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
-                }
-            }
         }
     }
 }

@@ -2,11 +2,11 @@
 using System.Linq;
 using UnityEngine;
 
-public static partial class Rsc
+public static partial class Load
 {
     private static List<string> materialTileList = new List<string>
     {
-        Statics.RESOURCE_PATH_MATERIAL_TILE_TYPES
+        Statics.LOAD_PATH_MATERIAL_TILE_TYPES
     };
 
     private static Dictionary<string, Material> __materialTileMap;
@@ -15,7 +15,7 @@ public static partial class Rsc
         get
         {
             if (__materialTileMap == null)
-                __materialTileMap = RscHelper.CreateMaterialDict(materialTileList);
+                __materialTileMap = LoadHelper.CreateMaterialDict(materialTileList);
             
             return __materialTileMap;
         }
@@ -23,7 +23,7 @@ public static partial class Rsc
 
     private static List<string> materialColorList = new List<string>
     {
-        Statics.RESOURCE_PATH_MATERIAL_COLORS,
+        Statics.LOAD_PATH_MATERIAL_COLORS,
     };
 
     private static Dictionary<string, Material> __materialColorMap;
@@ -32,7 +32,7 @@ public static partial class Rsc
         get
         {
             if (__materialColorMap == null)
-                __materialColorMap = RscHelper.CreateMaterialDict(materialColorList);
+                __materialColorMap = LoadHelper.CreateMaterialDict(materialColorList);
 
             return __materialColorMap;
         }

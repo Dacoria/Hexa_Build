@@ -14,7 +14,7 @@ public partial class HexSurfaceScript : BaseEventCallback
 
         var getGoSurfaceBase = mainGo.transform.GetChild(0);
 
-        if (Rsc.MaterialTileMap.TryGetValue(to.ToString(), out Material result))
+        if (Load.MaterialTileMap.TryGetValue(to.ToString(), out Material result))
         {
             var meshRenderer = getGoSurfaceBase.GetComponent<MeshRenderer>();
             meshRenderer.material = result;

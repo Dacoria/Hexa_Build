@@ -36,10 +36,10 @@ public static class HexSurfaceExt
     public static bool CanChangeSurfaceType(this Hex hex) => 
         hex.AllowedHexSurfaceTypes().Count > 0;
 
-    public static List<ResourceAmount> BuildCost(this HexSurfaceType surfaceType) => surfaceType switch
+    public static List<ResourceAmount> Cost(this HexSurfaceType surfaceType) => surfaceType switch
     {
-        HexSurfaceType.Sand_Dirt => new List<ResourceAmount> { new ResourceAmount(5, ResourceType.Mana) },
-        HexSurfaceType.Light_Grey_Stone => new List<ResourceAmount> { new ResourceAmount(10, ResourceType.Mana) },
+        HexSurfaceType.Sand_Dirt => Utils.Rsc(ResourceType.Mana, 5),
+        HexSurfaceType.Light_Grey_Stone => Utils.Rsc(ResourceType.Mana, 10),    
         _ => new List<ResourceAmount>()
     };
 
@@ -65,6 +65,16 @@ public static class HexSurfaceExt
     public static bool CanBeDiscovered(this Hex hex)
     {
         return hex.FogIsActive();
+    }
+
+    public static bool CanBuildOn(this Hex hex)
+    {
+        return hex.HexSurfaceType == HexSurfaceType.Light_Grey_Stone;
+    }
+
+    public static bool CanUseSoilOn(this Hex hex)
+    {
+        return hex.HexSurfaceType == HexSurfaceType.Sand_Dirt;
     }
 
     public static bool IsWater(this HexSurfaceType surfaceType) => surfaceType switch

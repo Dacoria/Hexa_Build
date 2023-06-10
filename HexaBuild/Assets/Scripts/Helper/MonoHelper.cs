@@ -18,11 +18,16 @@ public class MonoHelper : MonoBehaviour
     public AnimationCurve CurveSlowStart;
     public AnimationCurve CurveSlowEnd;
 
-    public void FadeIn(CanvasGroup canvasGroup, float aTime, Action callback = null) => FadeTo(canvasGroup, 1, aTime, callback);
-    public void FadeOut(CanvasGroup canvasGroup, float aTime, Action callback = null) => FadeTo(canvasGroup, 0, aTime, callback);
+    public void FadeIn(CanvasGroup canvasGroup, float aTime, Action callback = null, bool stopOtherCR = false) => FadeTo(canvasGroup, 1, aTime, callback, stopOtherCR);
+    public void FadeOut(CanvasGroup canvasGroup, float aTime, Action callback = null, bool stopOtherCR = false) => FadeTo(canvasGroup, 0, aTime, callback, stopOtherCR);
 
-    public void FadeTo(CanvasGroup canvasGroup, float aValue, float aTime, Action callback)
+    public void FadeTo(CanvasGroup canvasGroup, float aValue, float aTime, Action callback, bool stopOtherCR)
     {
+        if(stopOtherCR)
+        {
+            StopAllCoroutines();
+        }
+
         StartCoroutine(CR_FadeTo(canvasGroup, aValue, aTime, callback));
     }
 

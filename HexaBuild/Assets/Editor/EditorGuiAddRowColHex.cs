@@ -125,7 +125,7 @@ public class EditorGuiAddRowColHex : UnityEditor.EditorWindow
         var prefabForestRoot = PrefabUtility.GetCorrespondingObjectFromSource(GetForestGoFromHex(hexRightUpperCorner));
         var surfaceGo = PrefabUtility.InstantiatePrefab(prefabForestRoot, Utils.GetChildGoByName(newHex.gameObject, "Main").transform) as GameObject;
 
-        if (Rsc.MaterialTileMap.TryGetValue(newHex.HexSurfaceType.ToString(), out Material result))
+        if (Load.MaterialTileMap.TryGetValue(newHex.HexSurfaceType.ToString(), out Material result))
         {
             var meshRenderer = surfaceGo.GetComponent<MeshRenderer>();
             meshRenderer.material = result;

@@ -24,7 +24,6 @@ public enum HexSurfaceType
     Snow,
     Snow_Rocks,
     Water_Deep,
-    Water_Moving,
     Water_Ice_Cracked,
     Yellow_Stone,
     SandRock,
@@ -71,7 +70,6 @@ public static class HexSurfaceExt
     public static bool IsWater(this HexSurfaceType surfaceType) => surfaceType switch
     {
         HexSurfaceType.Water_Deep => true,
-        HexSurfaceType.Water_Moving => true,
         HexSurfaceType.Water_Ice_Cracked => true,
         HexSurfaceType.Water_Light => true,
         HexSurfaceType.Simple_Water => true,

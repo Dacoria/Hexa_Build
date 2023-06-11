@@ -36,13 +36,11 @@ public enum HexSurfaceType
 
 public static class HexSurfaceExt
 {
-    public static bool CanChangeSurfaceType(this Hex hex) => 
-        hex.AllowedHexSurfaceTypes().Count > 0;
-
     public static List<ResourceAmount> Cost(this HexSurfaceType surfaceType) => surfaceType switch
     {
         HexSurfaceType.Sand_Dirt => Utils.Rsc(ResourceType.Mana, 5),
-        HexSurfaceType.Light_Grey_Stone => Utils.Rsc(ResourceType.Mana, 10),    
+        HexSurfaceType.Light_Grey_Stone => Utils.Rsc(ResourceType.Mana, 10),
+        HexSurfaceType.Transparant => Utils.Rsc(ResourceType.Mana, 10, ResourceType.Energy, 10),
         _ => new List<ResourceAmount>()
     };
 
@@ -65,9 +63,14 @@ public static class HexSurfaceExt
         return surfaceType == HexSurfaceType.Barren;
     }
 
-    public static bool IsDiscoverable(this HexSurfaceType surfaceType)
+    public static bool IsScoutable(this HexSurfaceType surfaceType)
     {
         return surfaceType == HexSurfaceType.Transparant;
+    }
+
+    public static bool IsVisible(this HexSurfaceType surfaceType)
+    {
+        return surfaceType != HexSurfaceType.Transparant;
     }
 
     public static bool IsBuildGround(this HexSurfaceType surfaceType)

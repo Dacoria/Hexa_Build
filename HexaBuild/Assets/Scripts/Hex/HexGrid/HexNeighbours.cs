@@ -12,13 +12,13 @@ public class HexNeighbours
         Dictionary<Vector3Int, Hex> hexTileDict, 
         Vector3Int hexCoordinates, 
         int range, 
-        bool onlyMoveInOneDirection, 
+        bool showOnlyVisibleTiles, 
         bool showOnlyFurthestRange, 
         bool includeStartHex, 
         bool excludeWater
     )
     {
-        var neighbours = GetNeighboursForWithDirection(hexTileDict, hexCoordinates, range, onlyMoveInOneDirection);
+        var neighbours = GetNeighboursForWithDirection(hexTileDict, hexCoordinates, range);
 
         if (showOnlyFurthestRange)
         {            
@@ -27,8 +27,12 @@ public class HexNeighbours
         if (excludeWater)
         {
             neighbours = neighbours.Where(neighbour => !neighbour.GetHex().HexSurfaceType.IsWater()).ToList();
-        }        
-        if(includeStartHex)
+        }
+        if (showOnlyVisibleTiles)
+        {
+            neighbours = neighbours.Where(neighbour => neighbour.GetHex().HexSurfaceType.IsVisible()).ToList();
+        }
+        if (includeStartHex)
         {
             neighbours.Add(hexCoordinates);
         }
@@ -36,9 +40,9 @@ public class HexNeighbours
         return neighbours;
     }
 
-    private List<Vector3Int> GetNeighboursForWithDirection(Dictionary<Vector3Int, Hex> hexTileDict, Vector3Int hexCoordinates, int range, bool onlyMoveInOneDirection)
+    private List<Vector3Int> GetNeighboursForWithDirection(Dictionary<Vector3Int, Hex> hexTileDict, Vector3Int hexCoordinates, int range)
     {
-        if(onlyMoveInOneDirection)
+        if(false)
         {
             return GetNeighboursOneDirections(hexTileDict, hexCoordinates, range);
         }

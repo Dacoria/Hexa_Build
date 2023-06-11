@@ -37,11 +37,12 @@ public class UiHexLeftClick : MonoBehaviour
     private static void ClickOnTile(Hex hexSelected)
     {                  
         hexSelected.EnableHighlight(HighlightColorType.Green);
-        if (hexSelected.HexSurfaceType.IsBarren())
+
+        if (HexMutateHandler.instance.CanCreateHexSurface(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
         }
-        else if (HexMutateHandler.instance.CanCreateHexSurface(hexSelected))
+        else if (HexMutateHandler.instance.CanScoutHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
         }

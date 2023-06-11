@@ -17,14 +17,14 @@ public class ScoutButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(scoutType.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanDiscoverHex(relatedHex, scoutType));
+        uiHexButton.SetAllowed(HexMutateHandler.instance.CanScoutHex(relatedHex, scoutType));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        HexMutateHandler.instance.DiscoverHex(hex, scoutType);
+        HexMutateHandler.instance.ScoutHex(hex, scoutType);
     }
 
     public TooltipTexts GetTooltipTexts()

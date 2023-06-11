@@ -27,20 +27,21 @@ public class HexMutateHandler : MonoBehaviour
             (newSurfaceType.HasValue ? ResourceHandler.instance.HasResourcesForChange(newSurfaceType.Value.Cost()) : true);
     }
 
-    public void DiscoverHex(Hex hex, ScoutType type)
+    public void ScoutHex(Hex hex, ScoutType type)
     {
-        if (!CanDiscoverHex(hex, type))
+        if (!CanScoutHex(hex, type))
         {
             throw new System.Exception("Zou je eerder verwachten op te vangen");
         }
 
         type.Cost().ForEach(x => ResourceHandler.instance.RemoveResource(x.Type, x.Amount));
-        hex.DiscoverHex();
+        hex.ScoutHex();
     }
 
-    public bool CanDiscoverHex(Hex hex, ScoutType? type = null)
+    public bool CanScoutHex(Hex hex, ScoutType? type = null)
     {
-        return hex.HexSurfaceType.IsDiscoverable() &&
+        return hex.HexSurfaceType.IsScoutable() &&
+            HexGrid.instance.GetNeighboursFor(hex.HexCoordinates, range: 1).Any() &&
             (type.HasValue ? ResourceHandler.instance.HasResourcesForChange(type.Value.Cost()) : true);
     }
 

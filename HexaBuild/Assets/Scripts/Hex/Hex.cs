@@ -40,7 +40,7 @@ public class Hex : BaseEventCallback
         }
     }
 
-    public void DiscoverHex()
+    public void ScoutHex()
     {
         ChangeHexSurfaceType(HexSurfaceType.Barren);
     }

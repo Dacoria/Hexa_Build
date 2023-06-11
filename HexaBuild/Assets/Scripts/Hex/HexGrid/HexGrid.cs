@@ -61,13 +61,13 @@ public class HexGrid : BaseEventCallback
         }
     }    
 
-    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool? withUnitOnHex = null, bool onlyMoveInOneDirection = false, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
+    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool showOnlyVisibleTiles = true, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
     {
         return hexNeighbours.GetNeighboursFor(
             hexTileDict: hexTileDict,
             hexCoordinates: hexCoordinates,
             range: range,
-            onlyMoveInOneDirection: onlyMoveInOneDirection,
+            showOnlyVisibleTiles: showOnlyVisibleTiles,
             showOnlyFurthestRange: showOnlyFurthestRange,
             includeStartHex: includeStartHex,
             excludeWater: excludeWater

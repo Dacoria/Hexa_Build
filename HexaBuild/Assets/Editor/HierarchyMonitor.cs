@@ -14,7 +14,7 @@ public static class HierarchyMonitor
     }
 
     private static bool isRunning;
-    private static bool previousUseEditorGuiScripts;
+    private static bool previousUseEditorGuiScripts = true;
 
     private static void OnHierarchyWindowItemOnGUI(int instanceID, Rect selectionRect)
     {

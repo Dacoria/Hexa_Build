@@ -11,7 +11,7 @@ public class LoadingDisplayShowerScript : BaseEventCallbackSlowUpdate
     {
         transform.GetChild(0).gameObject.SetActive(Settings.UserInterfaceIsLocked);
     }
-    
+
     protected override void OnGridLoaded()
     {
         Settings.UserInterfaceIsLocked = false;

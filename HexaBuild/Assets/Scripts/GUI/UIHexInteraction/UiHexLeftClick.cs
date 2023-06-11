@@ -38,31 +38,31 @@ public class UiHexLeftClick : MonoBehaviour
     {                  
         hexSelected.EnableHighlight(HighlightColorType.Green);
 
-        if (HexMutateHandler.instance.CanChangeHexSurface(hexSelected))
+        if (HexActionHandler.instance.CanChangeHexSurface(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadChangeHexSurfaceButtons(hexSelected);
             return;
         }
 
-        if (HexMutateHandler.instance.CanScoutHex(hexSelected))
+        if (HexActionHandler.instance.CanScoutHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
             return;
         }
 
-        if (HexMutateHandler.instance.CanBuildOnHex(hexSelected))
+        if (HexActionHandler.instance.CanBuildOnHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
             return;
         }
 
-        if (HexMutateHandler.instance.CanPlantOnSoilHex(hexSelected))
+        if (HexActionHandler.instance.CanPlantOnSoilHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadPlantSoilButtons(hexSelected);
             return;
         }
 
-        if (HexMutateHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
+        if (HexActionHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
         {
             ShowHexButtonsHandler.instance.LoadHarvestSoilButtons(hexSelected);
             return;

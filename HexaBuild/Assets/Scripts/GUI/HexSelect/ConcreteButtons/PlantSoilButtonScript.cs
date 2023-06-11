@@ -16,14 +16,14 @@ public class PlantSoilButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(soilType.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanPlantOnSoilHex(relatedHex, soilType));
+        uiHexButton.SetAllowed(HexActionHandler.instance.CanPlantOnSoilHex(relatedHex, soilType));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        HexMutateHandler.instance.UseSoilOnHex(hex, soilType);
+        HexActionHandler.instance.PlantOnSoilHex(hex, soilType);
     }
 
     public TooltipTexts GetTooltipTexts()

@@ -16,14 +16,14 @@ public class ChangeHexSurfaceButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(hexSurfaceType.ToString()), isTransparentImage: false);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanChangeHexSurface(relatedHex, hexSurfaceType));
+        uiHexButton.SetAllowed(HexActionHandler.instance.CanChangeHexSurface(relatedHex, hexSurfaceType));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        HexMutateHandler.instance.CreateHexSurface(hex, hexSurfaceType);
+        HexActionHandler.instance.CreateHexSurface(hex, hexSurfaceType);
     }
 
     public TooltipTexts GetTooltipTexts()

@@ -18,14 +18,14 @@ public class HarvestSoilButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
                 
         uiHexButton.SetSprite(Load.SpriteMap.Get("Take"), isTransparentImage: true);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanHarvestSoilObjOnHex(relatedHex));
+        uiHexButton.SetAllowed(HexActionHandler.instance.CanHarvestSoilObjOnHex(relatedHex));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        HexMutateHandler.instance.HarvestSoilObjOnHex(hex);
+        HexActionHandler.instance.HarvestSoilObjOnHex(hex);
     }
 
     public TooltipTexts GetTooltipTexts()

@@ -34,17 +34,17 @@ public class ShowHexButtonsHandler : BaseEventCallback
         LoadButtons<SoilType, HarvestSoilButtonScript>(relatedHex, 
             new List<SoilType> { relatedHex.HexObjectOnTileType.GetSoilType()});
 
-    private void LoadButtons<T,S>(Hex selectedHex, List<T> values = null) 
-        where T : Enum 
-        where S : MonoBehaviour, IHexButtonScript
+    private void LoadButtons<EnumType,HexButtonScriptType>(Hex selectedHex, List<EnumType> values = null) 
+        where EnumType : Enum 
+        where HexButtonScriptType : MonoBehaviour, IHexButtonScript
     {
         ResetActiveButtons();
 
-        IEnumerable enumValues = values != null ? values : Enum.GetValues(typeof(T));
-        foreach (T surfaceType in enumValues)
+        IEnumerable enumValues = values != null ? values : Enum.GetValues(typeof(EnumType));
+        foreach (EnumType surfaceType in enumValues)
         {
             var buttonGo = Instantiate(HexButtonPrefab, transform);
-            buttonGo.AddComponent<S>();
+            buttonGo.AddComponent<HexButtonScriptType>();
             buttonGo.transform.GetChild(0).GetChild(0).gameObject.AddComponent<HexButtonTooltipCanvas>();
 
             var buttonScript = buttonGo.GetComponent<IHexButtonScript>();

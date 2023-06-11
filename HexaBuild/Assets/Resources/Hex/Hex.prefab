@@ -86,7 +86,6 @@ MonoBehaviour:
   HexSurfaceType: 2
   HexObjectOnTileType: 0
   OrigPosition: {x: 0, y: 0, z: 0}
-  InitFogIsActive: 0
 --- !u!114 &2263513362258068212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3441048710116059345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690a9906895fe144d9f37365178b255a, type: 3}
+  m_Script: {fileID: 11500000, guid: d2197a6fbed0f3c4b877b51fbf965e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OffSetCoordinates: {x: 0, y: 0, z: 0}

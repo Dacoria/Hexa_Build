@@ -18,14 +18,14 @@ public class BuildingButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(buildingType.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanBuildOnHex(relatedHex, buildingType));
+        uiHexButton.SetAllowed(HexActionHandler.instance.CanBuildOnHex(relatedHex, buildingType));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        HexMutateHandler.instance.BuildOnHex(hex, buildingType);
+        HexActionHandler.instance.BuildOnHex(hex, buildingType);
     }
 
     public TooltipTexts GetTooltipTexts()

@@ -27,7 +27,7 @@ public class ShowHexButtonsHandler : BaseEventCallback
     public void LoadScoutButtons(Hex relatedHex) =>
         LoadButtons<ScoutType, ScoutButtonScript>(relatedHex);
     public void LoadPlantSoilButtons(Hex relatedHex) =>
-        LoadButtons<SoilType, SoilButtonScript>(relatedHex);
+        LoadButtons<SoilType, PlantSoilButtonScript>(relatedHex);
     public void LoadBuildButtons(Hex relatedHex) =>
         LoadButtons<BuildingType, BuildingButtonScript>(relatedHex);
     public void LoadHarvestSoilButtons(Hex relatedHex) =>
@@ -45,8 +45,10 @@ public class ShowHexButtonsHandler : BaseEventCallback
         {
             var buttonGo = Instantiate(HexButtonPrefab, transform);
             buttonGo.AddComponent<S>();
+            buttonGo.transform.GetChild(0).GetChild(0).gameObject.AddComponent<HexButtonTooltipCanvas>();
 
             var buttonScript = buttonGo.GetComponent<IHexButtonScript>();
+
             buttonScript.SetHexValue(surfaceType, selectedHex);
             activeButtons.Add(buttonScript);
         }

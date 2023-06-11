@@ -25,4 +25,11 @@ public class HexSurfaceButtonScript : BaseEventCallback, IHexButtonScript
         ShowHexButtonsHandler.instance.RemoveAllButtons();
         HexMutateHandler.instance.CreateHexSurface(hex, hexSurfaceType);
     }
+
+    public TooltipTexts GetTooltipTexts()
+    {
+        return HexButtonTooltipTexts.Generate(
+            "Create " + hexSurfaceType.Name(),
+            hexSurfaceType.Cost());
+    }
 }

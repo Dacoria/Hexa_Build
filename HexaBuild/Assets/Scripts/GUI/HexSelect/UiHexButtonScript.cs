@@ -28,13 +28,10 @@ public class UiHexButtonScript : BaseEventCallback
         
         var backgroundImage = Button.transform.parent.GetComponent<Image>();
 
-        var multiplier = 1.15f; // genoeg om de outline te zien
-        backgroundImage.transform.localScale = new Vector3(1f / multiplier, 1f / multiplier, 0);
-
         if (!isTransparentImage)
         {
             // materials --> dan heb je de outline al -> compenseren
-            Image.transform.localScale = new Vector3(1f * multiplier, 1f * multiplier, 0);
+            Image.transform.localScale = new Vector3(1f * 1.15f, 1f * 1.15f, 0);
 
             // anders is het zo wit....zeker bij rood
             backgroundImage.color = backgroundImage.color.SetA(0.85f);

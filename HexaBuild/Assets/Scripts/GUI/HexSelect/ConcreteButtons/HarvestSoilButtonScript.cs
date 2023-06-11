@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,5 +26,13 @@ public class HarvestSoilButtonScript : BaseEventCallback, IHexButtonScript
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
         HexMutateHandler.instance.HarvestSoilObjOnHex(hex);
+    }
+
+    public TooltipTexts GetTooltipTexts()
+    {
+        return HexButtonTooltipTexts.Generate(
+            "Harvest " + harvestType.ToString(),
+            harvestType.HarvestCost(),
+            harvestType.HarvestGain());
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,5 +26,10 @@ public class BuildingButtonScript : BaseEventCallback, IHexButtonScript
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
         HexMutateHandler.instance.BuildOnHex(hex, buildingType);
+    }
+
+    public TooltipTexts GetTooltipTexts()
+    {
+        return HexButtonTooltipTexts.Generate(buildingType.ToString(), buildingType.Cost());
     }
 }

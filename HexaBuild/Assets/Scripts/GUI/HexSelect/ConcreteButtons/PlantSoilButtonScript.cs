@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoilButtonScript : BaseEventCallback, IHexButtonScript
+public class PlantSoilButtonScript : BaseEventCallback, IHexButtonScript
 {
     private Hex hex;
     private SoilType soilType;
@@ -24,5 +24,12 @@ public class SoilButtonScript : BaseEventCallback, IHexButtonScript
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
         HexMutateHandler.instance.UseSoilOnHex(hex, soilType);
+    }
+
+    public TooltipTexts GetTooltipTexts()
+    {
+        return HexButtonTooltipTexts.Generate(
+            "Create " + soilType.ToString(),
+            soilType.PlantCost());
     }
 }

@@ -3,22 +3,22 @@ using UnityEngine;
 
 public static partial class Load
 {
-    private static List<string> goObjList = new List<string>
+    private static List<string> goList = new List<string>
     {
         Statics.LOAD_PATH_GO_OBJ_ON_TILE,
     };
 
-    private static Dictionary<string, GameObject> __goEnemiesOrObjMap;
-    public static Dictionary<string, GameObject> GoEnemiesOrObjMap
+    private static Dictionary<string, GameObject> __goMap;
+    public static Dictionary<string, GameObject> GoMap
     {
         get
         {
-            if (__goEnemiesOrObjMap == null)
+            if (__goMap == null)
             {
-                __goEnemiesOrObjMap = LoadHelper.CreateGoDict(goObjList);                
+                __goMap = LoadHelper.CreateGoDict(goList);                
             }
 
-            return __goEnemiesOrObjMap;
+            return __goMap;
         }
     }
 }

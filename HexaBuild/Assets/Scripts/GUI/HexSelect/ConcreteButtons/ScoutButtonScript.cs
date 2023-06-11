@@ -26,4 +26,11 @@ public class ScoutButtonScript : BaseEventCallback, IHexButtonScript
         ShowHexButtonsHandler.instance.RemoveAllButtons();
         HexMutateHandler.instance.DiscoverHex(hex, scoutType);
     }
+
+    public TooltipTexts GetTooltipTexts()
+    {
+        return HexButtonTooltipTexts.Generate(
+            scoutType.ToString(),
+            scoutType.Cost());
+    }
 }

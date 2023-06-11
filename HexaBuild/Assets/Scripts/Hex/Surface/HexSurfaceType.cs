@@ -89,4 +89,14 @@ public static class HexSurfaceExt
 
         _ => false
     };
+
+    public static string Name(this HexSurfaceType surfaceType) => surfaceType switch
+    {
+        HexSurfaceType.Barren => "Barren Ground",
+        HexSurfaceType.Light_Grey_Stone => "Building Ground",
+        HexSurfaceType.Sand_Dirt => "Soil Ground",
+        HexSurfaceType.Transparant => "Unknown",
+
+        _ => "Very Unknown"
+    };
 }

@@ -32,7 +32,7 @@ public static class HexEditorUtil
         DestroyChildrenOfGo(structureGo);
         if(to != HexObjectOnTileType.None)
         {
-            if (Load.GoEnemiesOrObjMap.TryGetValue(to.ToString(), out GameObject result))
+            if (Load.GoMap.TryGetValue(to.ToString(), out GameObject result))
             {
                 var go = PrefabUtility.InstantiatePrefab(result, structureGo.transform) as GameObject;
                 go.transform.rotation = new Quaternion(0, 180, 0, 0);                

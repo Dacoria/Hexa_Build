@@ -6,7 +6,7 @@ public partial class HexSurfaceScript : BaseEventCallback
 
     public void HexSurfaceTypeChanged(HexSurfaceType to)
     {
-        var mainGo = GetMainGo();
+        var mainGo = Utils.GetMainGo(hex);
         if (mainGo == null || mainGo.transform.childCount == 0)
         {
             return;
@@ -20,6 +20,4 @@ public partial class HexSurfaceScript : BaseEventCallback
             meshRenderer.material = result;
         }
     }
-
-    private GameObject GetMainGo() => Utils.GetChildGoByName(hex.gameObject, "Main");
 }

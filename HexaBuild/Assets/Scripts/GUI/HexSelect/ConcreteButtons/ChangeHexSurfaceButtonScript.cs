@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HexSurfaceButtonScript : BaseEventCallback, IHexButtonScript
+public class ChangeHexSurfaceButtonScript : BaseEventCallback, IHexButtonScript
 {
     private Hex hex;
     private HexSurfaceType hexSurfaceType;
@@ -16,7 +16,7 @@ public class HexSurfaceButtonScript : BaseEventCallback, IHexButtonScript
         hex = relatedHex;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(hexSurfaceType.ToString()), isTransparentImage: false);
-        uiHexButton.SetAllowed(HexMutateHandler.instance.CanCreateHexSurface(relatedHex, hexSurfaceType));
+        uiHexButton.SetAllowed(HexMutateHandler.instance.CanChangeHexSurface(relatedHex, hexSurfaceType));
         uiHexButton.SetButtonAction(() => Click());
     }
 

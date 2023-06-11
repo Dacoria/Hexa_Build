@@ -38,29 +38,36 @@ public class UiHexLeftClick : MonoBehaviour
     {                  
         hexSelected.EnableHighlight(HighlightColorType.Green);
 
-        if (HexMutateHandler.instance.CanCreateHexSurface(hexSelected))
+        if (HexMutateHandler.instance.CanChangeHexSurface(hexSelected))
         {
-            ShowHexButtonsHandler.instance.LoadSurfaceButtons(hexSelected);
+            ShowHexButtonsHandler.instance.LoadChangeHexSurfaceButtons(hexSelected);
+            return;
         }
-        else if (HexMutateHandler.instance.CanScoutHex(hexSelected))
+
+        if (HexMutateHandler.instance.CanScoutHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
+            return;
         }
-        else if (HexMutateHandler.instance.CanBuildOnHex(hexSelected))
+
+        if (HexMutateHandler.instance.CanBuildOnHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
+            return;
         }
-        else if (HexMutateHandler.instance.CanPlantOnSoilHex(hexSelected))
+
+        if (HexMutateHandler.instance.CanPlantOnSoilHex(hexSelected))
         {
             ShowHexButtonsHandler.instance.LoadPlantSoilButtons(hexSelected);
+            return;
         }
-        else if (HexMutateHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
+
+        if (HexMutateHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
         {
             ShowHexButtonsHandler.instance.LoadHarvestSoilButtons(hexSelected);
+            return;
         }
-        else
-        {
-            hexSelected.EnableHighlight(HighlightColorType.Cyan);
-        }
+
+        hexSelected.EnableHighlight(HighlightColorType.Cyan);
     }
 }

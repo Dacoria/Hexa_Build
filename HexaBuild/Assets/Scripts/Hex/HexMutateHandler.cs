@@ -12,7 +12,7 @@ public class HexMutateHandler : MonoBehaviour
 
     public void CreateHexSurface(Hex hex, HexSurfaceType type)
     {
-        if (!CanCreateHexSurface(hex, type))
+        if (!CanChangeHexSurface(hex, type))
         {
             throw new System.Exception("Zou je eerder verwachten op te vangen");
         }
@@ -21,9 +21,9 @@ public class HexMutateHandler : MonoBehaviour
         hex.ChangeHexSurfaceType(type);
     }
 
-    public bool CanCreateHexSurface(Hex hex, HexSurfaceType? newSurfaceType = null)
+    public bool CanChangeHexSurface(Hex hex, HexSurfaceType? newSurfaceType = null)
     {
-        return hex.AllowedHexSurfaceTypes().Any(x => x == newSurfaceType) &&
+        return hex.AllowedHexSurfaceTypes().Any() &&
             (newSurfaceType.HasValue ? ResourceHandler.instance.HasResourcesForChange(newSurfaceType.Value.Cost()) : true);
     }
 

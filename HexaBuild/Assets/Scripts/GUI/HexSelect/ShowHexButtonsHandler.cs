@@ -22,8 +22,8 @@ public class ShowHexButtonsHandler : BaseEventCallback
         canvasGroup.alpha = 0; // invisible
     }
 
-    public void LoadSurfaceButtons(Hex relatedHex) =>
-        LoadButtons<HexSurfaceType, HexSurfaceButtonScript>(relatedHex, relatedHex.AllowedHexSurfaceTypes());
+    public void LoadChangeHexSurfaceButtons(Hex relatedHex) =>
+        LoadButtons<HexSurfaceType, ChangeHexSurfaceButtonScript>(relatedHex, relatedHex.AllowedHexSurfaceTypes());
     public void LoadScoutButtons(Hex relatedHex) =>
         LoadButtons<ScoutType, ScoutButtonScript>(relatedHex);
     public void LoadPlantSoilButtons(Hex relatedHex) =>

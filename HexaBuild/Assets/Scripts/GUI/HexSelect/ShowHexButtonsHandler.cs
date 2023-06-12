@@ -41,7 +41,7 @@ public class ShowHexButtonsHandler : BaseEventCallback
         ResetActiveButtons();
 
         IEnumerable enumValues = values != null ? values : Enum.GetValues(typeof(EnumType));
-        foreach (EnumType surfaceType in enumValues)
+        foreach (var surfaceType in enumValues)
         {
             var buttonGo = Instantiate(HexButtonPrefab, transform);
             buttonGo.AddComponent<HexButtonScriptType>();
@@ -49,7 +49,7 @@ public class ShowHexButtonsHandler : BaseEventCallback
 
             var buttonScript = buttonGo.GetComponent<IHexButtonScript>();
 
-            buttonScript.SetHexValue(surfaceType, selectedHex);
+            buttonScript.SetHexValue(surfaceType as Enum, selectedHex);
             activeButtons.Add(buttonScript);
         }
 

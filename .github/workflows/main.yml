@@ -26,7 +26,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: WebGL      
-          unityVersion: 2020.3.15f1
+          unityVersion: 2020.3.27f1
           projectPath: HexaBuild
           buildMethod: UnityBuilderAction.BuildScript.Build
        # Output

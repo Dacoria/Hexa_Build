@@ -35,6 +35,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: html5
-          ITCH_GAME: Hexa Build
+          ITCH_GAME: HexaBuild
           ITCH_USER: Dacoria
           PACKAGE: build/WebGL

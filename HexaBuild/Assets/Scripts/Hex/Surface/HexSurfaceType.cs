@@ -38,9 +38,9 @@ public static class HexSurfaceExt
 {
     public static List<ResourceAmount> Cost(this HexSurfaceType surfaceType) => surfaceType switch
     {
-        HexSurfaceType.Sand_Dirt => Utils.Rsc(ResourceType.Mana, 5),
-        HexSurfaceType.Light_Grey_Stone => Utils.Rsc(ResourceType.Mana, 10),
-        HexSurfaceType.Transparant => Utils.Rsc(ResourceType.Mana, 10, ResourceType.Energy, 10),
+        HexSurfaceType.Sand_Dirt => Utils.Rsc(RscType.Mana, 5),
+        HexSurfaceType.Light_Grey_Stone => Utils.Rsc(RscType.Mana, 10),
+        HexSurfaceType.Transparant => Utils.Rsc(RscType.Mana, 10, RscType.Energy, 10),
         _ => new List<ResourceAmount>()
     };
 
@@ -58,10 +58,13 @@ public static class HexSurfaceExt
         return new List<HexSurfaceType>();
     }
 
-    public static bool IsBarren(this HexSurfaceType surfaceType)
-    {
-        return surfaceType == HexSurfaceType.Barren;
-    }
+    public static HexSurfaceType Barren() => HexSurfaceType.Barren;
+    public static HexSurfaceType Soil() => HexSurfaceType.Sand_Dirt;
+    public static HexSurfaceType BuildingArea() => HexSurfaceType.Light_Grey_Stone;
+    public static HexSurfaceType Transparant() => HexSurfaceType.Transparant;
+
+
+    public static bool IsBarren(this HexSurfaceType surfaceType) => surfaceType == Barren();
 
     public static bool IsScoutable(this HexSurfaceType surfaceType)
     {

@@ -12,25 +12,25 @@ public static class HexSoilExtentions
 {
     public static List<ResourceAmount> PlantCost(this SoilType type) => type switch
     {
-        SoilType.Tree => Utils.Rsc(ResourceType.Wood, 1),
-        SoilType.Grain => Utils.Rsc(ResourceType.Wood, 2),
-        SoilType.Stone => Utils.Rsc(ResourceType.Stone, 2),
+        SoilType.Tree => Utils.Rsc(RscType.Wood, 1),
+        SoilType.Grain => Utils.Rsc(RscType.Wood, 2),
+        SoilType.Stone => Utils.Rsc(RscType.Stone, 2),
         _ => throw new System.NotImplementedException(),
     };
 
     public static List<ResourceAmount> HarvestCost(this SoilType type) => type switch
     {
-        SoilType.Tree => Utils.Rsc(ResourceType.Energy, 5),
-        SoilType.Grain => Utils.Rsc(ResourceType.Energy, 5),
-        SoilType.Stone => Utils.Rsc(ResourceType.Energy, 10),
+        SoilType.Tree => Utils.Rsc(RscType.Energy, 5),
+        SoilType.Grain => Utils.Rsc(RscType.Energy, 5),
+        SoilType.Stone => Utils.Rsc(RscType.Energy, 10),
         _ => throw new System.NotImplementedException(),
     };
 
     public static List<ResourceAmount> HarvestGain(this SoilType type) => type switch
     {
-        SoilType.Tree => Utils.Rsc(ResourceType.Wood, 5),
-        SoilType.Grain => Utils.Rsc(ResourceType.Energy, 20),
-        SoilType.Stone => Utils.Rsc(ResourceType.Stone, 5),
+        SoilType.Tree => Utils.Rsc(RscType.Wood, 5),
+        SoilType.Grain => Utils.Rsc(RscType.Energy, 20),
+        SoilType.Stone => Utils.Rsc(RscType.Stone, 5),
         _ => throw new System.NotImplementedException(),
     };
 

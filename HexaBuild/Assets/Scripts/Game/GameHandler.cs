@@ -16,10 +16,10 @@ public partial class GameHandler : BaseEventCallback
     {
         var startResources = new List<ResourceAmount>
         {
-            new ResourceAmount(25, ResourceType.Energy),
-            new ResourceAmount(15, ResourceType.Mana),
-            new ResourceAmount(5, ResourceType.Wood),
-            new ResourceAmount(3, ResourceType.Stone),
+            new ResourceAmount(25, RscType.Energy),
+            new ResourceAmount(15, RscType.Mana),
+            new ResourceAmount(5, RscType.Wood),
+            new ResourceAmount(3, RscType.Stone),
         };
         ResourceHandler.instance.SetInitResources(startResources);
 

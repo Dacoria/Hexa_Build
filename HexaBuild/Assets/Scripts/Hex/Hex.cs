@@ -13,7 +13,7 @@ public class Hex : BaseEventCallback
     public HexSurfaceType HexSurfaceType;
 
     public HexObjectOnTileType HexObjectOnTileType; // voor debug + setting purposes
-
+    public HexStateType HexStateType;
 
     public Vector3 OrigPosition;
 

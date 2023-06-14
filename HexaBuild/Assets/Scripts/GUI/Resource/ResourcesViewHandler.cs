@@ -19,7 +19,7 @@ public class ResourcesViewHandler : BaseEventCallbackSlowUpdate
 
     public void LoadResourceInfo()
     {
-        foreach (ResourceType resourceType in Enum.GetValues(typeof(ResourceType)))
+        foreach (RscType resourceType in Enum.GetValues(typeof(RscType)))
         {
             var rscInfoGo = Instantiate(ResourceInfoPrefab, transform);
             rscInfoGo.SetType(resourceType);

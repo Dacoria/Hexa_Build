@@ -6,5 +6,7 @@ public enum HexObjectOnTileType
     Castle,
     Grain,
     Tree,
-    Stone
+    Stone,
+    Quarry,
+    Woodcutter
 }

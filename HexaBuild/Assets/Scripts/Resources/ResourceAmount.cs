@@ -1,15 +1,15 @@
 ﻿public class ResourceAmount
 {
     public int Amount;
-    public ResourceType Type;
+    public RscType Type;
 
-    public ResourceAmount(int amount, ResourceType type)
+    public ResourceAmount(int amount, RscType type)
     {
         Amount = amount;
         Type = type;
     }
 
-    public ResourceAmount(ResourceType type, int amount)
+    public ResourceAmount(RscType type, int amount)
     {
         Amount = amount;
         Type = type;

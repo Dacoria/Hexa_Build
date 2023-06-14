@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 public static partial class Utils
@@ -8,6 +10,11 @@ public static partial class Utils
     {
         var component = go.GetComponent<T>() ?? go.AddComponent<T>();
         return component;
+    }
+
+    public static IEnumerable<Type> FindDerivedTypes(Assembly assembly, Type baseType)
+    {
+        return assembly.GetTypes().Where(t => t != baseType && baseType.IsAssignableFrom(t));
     }
 
     public static GameObject GetChildGoByName(GameObject go, string nameToFind, int levelsDeep = 3)

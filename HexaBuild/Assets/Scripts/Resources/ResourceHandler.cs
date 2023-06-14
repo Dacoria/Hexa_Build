@@ -20,13 +20,13 @@ public class ResourceHandler: MonoBehaviour
         currentResources = startingResources;
     }
 
-    public void AddResource(ResourceType type, int amount)
+    public void AddResource(RscType type, int amount)
     {
         var resource = currentResources.Single(x => x.Type == type);
         resource.Amount += amount;        
     }
 
-    public void RemoveResource(ResourceType type, int amount)
+    public void RemoveResource(RscType type, int amount)
     {
         var resourceInStock = currentResources.Single(x => x.Type == type);
         resourceInStock.Amount -= amount;

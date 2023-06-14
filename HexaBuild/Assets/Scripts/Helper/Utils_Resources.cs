@@ -5,10 +5,10 @@ using System.Linq;
 public static partial class Utils
 {
     public static List<ResourceAmount> Rsc(
-        ResourceType? type1 = null, int amount1 = 0,
-        ResourceType? type2 = null, int amount2 = 0,
-        ResourceType? type3 = null, int amount3 = 0,
-        ResourceType? type4 = null, int amount4 = 0
+        RscType? type1 = null, int amount1 = 0,
+        RscType? type2 = null, int amount2 = 0,
+        RscType? type3 = null, int amount3 = 0,
+        RscType? type4 = null, int amount4 = 0
         )
     {
         var result = new List<ResourceAmount>();

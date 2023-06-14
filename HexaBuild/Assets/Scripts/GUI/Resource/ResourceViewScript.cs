@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class ResourceViewScript : MonoBehaviour
 {
-    public ResourceType ResourceType;
+    public RscType ResourceType;
     [ComponentInject] private TMP_Text text;
     [ComponentInject] private Image image;
 
@@ -17,7 +17,7 @@ public class ResourceViewScript : MonoBehaviour
         this.ComponentInject();
     }
 
-    public void SetType(ResourceType resourceType)
+    public void SetType(RscType resourceType)
     {
         ResourceType = resourceType;
         image.sprite = Load.SpriteMap.Get(resourceType.ToString());

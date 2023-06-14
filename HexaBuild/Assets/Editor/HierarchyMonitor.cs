@@ -50,13 +50,7 @@ public static class HierarchyMonitor
     private static IEnumerator HierarchyWindowItemOnGUIXSeconds(float seconds)
     {
         yield return new EditorWaitForSeconds(seconds);
-        isRunning = false;
-
-        //var selectedHexx = Selection.activeGameObject?.GetComponentInParent<Hex>();
-        //if(selectedHexx != null)
-        //{
-        //    Selection.activeGameObject = selectedHexx.gameObject;
-        //}        
+        isRunning = false;  
 
         var currentSelectedItem = Selection.activeGameObject;
 

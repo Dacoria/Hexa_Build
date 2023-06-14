@@ -10,8 +10,7 @@ using UnityEngine;
 public class HexEditorChangeType : Editor
 {
     private Hex previousSelectedHex;
-    private HexSurfaceType previousHexSurfaceType;
-    private HexObjectOnTileType previousHexObjectOnTileType;
+    private HexStateType previousHexStateType;
 
     public override void OnInspectorGUI()
     {
@@ -29,19 +28,15 @@ public class HexEditorChangeType : Editor
         }
 
         var firstHex = (Hex)target;        
-        if (previousSelectedHex == firstHex && previousHexSurfaceType != firstHex.HexSurfaceType)
+        if (previousSelectedHex == firstHex && previousHexStateType != firstHex.HexStateType)
         {
-            hexes.ForEach(hex => HexEditorUtil.HexSurfaceTypeChanged(hex, firstHex.HexSurfaceType));
-        }
-        if (previousSelectedHex == firstHex && previousHexObjectOnTileType != firstHex.HexObjectOnTileType)
-        {
-            // voor nu: alleen enemies!
-            hexes.ForEach(hex => HexEditorUtil.HexObjectOnTileTypeChanged(hex, firstHex.HexObjectOnTileType));
-        }
+            var props = firstHex.HexStateType.Props();
+            hexes.ForEach(hex => HexEditorUtil.HexSurfaceTypeChanged(hex, props.Surface));
+            hexes.ForEach(hex => HexEditorUtil.HexObjectOnTileTypeChanged(hex, props.ObjectOnTile));
+        }        
 
         previousSelectedHex = firstHex;
-        previousHexSurfaceType = firstHex.HexSurfaceType;
-        previousHexObjectOnTileType = firstHex.HexObjectOnTileType;
+        previousHexStateType = firstHex.HexStateType;
     }
 }
 

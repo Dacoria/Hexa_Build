@@ -4,13 +4,16 @@ using System.Linq;
 public interface IHexStateProperty
 {
     public HexStateType Type { get; }
-    public HexSurfaceType? Surface { get; }
-    public HexObjectOnTileType? ObjectOnTile { get; }
+    public HexSurfaceType Surface { get; }
+    public HexObjectOnTileType ObjectOnTile { get; }
     public string ButtonImageNameToGetInState { get; }
     public List<ResourceAmount> RscCostsToGetInState { get; }
-    public List<HexStateType> AllowedNextStateTypes { get; }
+    protected List<HexStateType> AllowedNextStateTypes { get; }
+    public List<HexStateType> PossibleNextStateTypes(Hex hex, bool checkResources = false) =>
+        AllowedNextStateTypes.Where(x => x.Props().StateAllowed(hex, checkResources)).ToList();
 
-    public bool ConditionsForfilledToEnterState(Hex hex);
+    protected bool ConditionsForfilledToEnterState(Hex hex) => true;
+    protected bool ConditionsForfilledToLeaveState(Hex hex) => true;
 
     public bool StateAllowed(Hex hex, bool checkResources)
     {
@@ -18,10 +21,19 @@ public interface IHexStateProperty
         {            
             return false;            
         }
-        if(!hex.HexStateType.GetProperties().AllowedNextStateTypes.Any(x => x == Type))
+        if(!hex.HexStateType.Props().AllowedNextStateTypes.Any(x => x == Type))
         {
             return false;
         }
-        return ConditionsForfilledToEnterState(hex);
+        if(!ConditionsForfilledToEnterState(hex))
+        {
+            return false;
+        }
+        if (!hex.HexStateType.Props().ConditionsForfilledToLeaveState(hex))
+        {
+            return false;
+        }
+
+        return true;
     }
 }

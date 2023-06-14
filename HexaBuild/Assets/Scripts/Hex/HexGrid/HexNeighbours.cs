@@ -14,8 +14,7 @@ public class HexNeighbours
         int range, 
         bool showOnlyVisibleTiles, 
         bool showOnlyFurthestRange, 
-        bool includeStartHex, 
-        bool excludeWater
+        bool includeStartHex
     )
     {
         var neighbours = GetNeighboursForWithDirection(hexTileDict, hexCoordinates, range);
@@ -23,14 +22,10 @@ public class HexNeighbours
         if (showOnlyFurthestRange)
         {            
             neighbours = neighbours.Where(neighbour => Direction.GetRangeFromCoordinates(hexCoordinates, neighbour) == range).ToList();
-        }      
-        if (excludeWater)
-        {
-            neighbours = neighbours.Where(neighbour => !neighbour.GetHex().HexSurfaceType.IsWater()).ToList();
         }
         if (showOnlyVisibleTiles)
         {
-            neighbours = neighbours.Where(neighbour => neighbour.GetHex().HexSurfaceType.IsVisible()).ToList();
+            neighbours = neighbours.Where(neighbour => neighbour.GetHex().HexStateType.Props().Surface.IsVisible()).ToList();                
         }
         if (includeStartHex)
         {

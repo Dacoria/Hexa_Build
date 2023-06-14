@@ -8,7 +8,7 @@ public static partial class Utils
 
     public static bool HasRscGains(this IHexStateProperty prop)
     {
-        var rscGains = prop.Type.GetProperties() as IRscGainsInState;
+        var rscGains = prop.Type.Props() as IRscGainsInState;
         return rscGains != null && rscGains.RscGainsInState.Any();
     }
 

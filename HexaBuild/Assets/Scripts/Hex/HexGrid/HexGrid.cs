@@ -61,7 +61,7 @@ public class HexGrid : BaseEventCallback
         }
     }    
 
-    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool showOnlyVisibleTiles = true, bool showOnlyFurthestRange = false, bool includeStartHex = false, bool excludeWater = false)
+    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool showOnlyVisibleTiles = true, bool showOnlyFurthestRange = false, bool includeStartHex = false)
     {
         return hexNeighbours.GetNeighboursFor(
             hexTileDict: hexTileDict,
@@ -69,8 +69,7 @@ public class HexGrid : BaseEventCallback
             range: range,
             showOnlyVisibleTiles: showOnlyVisibleTiles,
             showOnlyFurthestRange: showOnlyFurthestRange,
-            includeStartHex: includeStartHex,
-            excludeWater: excludeWater
+            includeStartHex: includeStartHex
         );
     }
 

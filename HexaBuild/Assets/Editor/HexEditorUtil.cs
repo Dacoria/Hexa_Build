@@ -50,29 +50,6 @@ public static class HexEditorUtil
             var child = structuresGo.transform.GetChild(i);
             Object.DestroyImmediate(child.gameObject);
         }
-    }      
-
-    public static Hex GetHexRightUpperCorner()
-    {
-        var currentHexes = GameObject.FindObjectsOfType<Hex>();
-        var hexRightUpperCornerCoordinate = currentHexes.Select(x => x.transform.position.ConvertPositionToCoordinates())
-            .OrderByDescending(z => z.z)
-            .ThenByDescending(x => x.x)
-            .First();
-        var hexRightUpperCorner = currentHexes.First(x => x.transform.position.ConvertPositionToCoordinates() == hexRightUpperCornerCoordinate);
-
-        return hexRightUpperCorner;
-    }
-
-    public static void ResetHexToDefault(Hex hex)
-    {
-        hex.HexSurfaceType = HexSurfaceType.Simple_Plain;
-        HexSurfaceTypeChanged(hex, hex.HexSurfaceType);
-
-        hex.HexObjectOnTileType = HexObjectOnTileType.None;
-
-        EditorUtility.SetDirty(hex);
-        EditorSceneManager.MarkSceneDirty(hex.gameObject.scene);
     }
 }
 

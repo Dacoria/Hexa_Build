@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -37,34 +38,11 @@ public class UiHexLeftClick : MonoBehaviour
     private static void ClickOnTile(Hex hexSelected)
     {                  
         hexSelected.EnableHighlight(HighlightColorType.Green);
+        var allowedNextStates = hexSelected.HexStateType.Props().PossibleNextStateTypes(hexSelected);
 
-        if (HexActionHandler.instance.CanChangeHexSurface(hexSelected))
+        if(allowedNextStates.Any())
         {
-            ShowHexButtonsHandler.instance.LoadChangeHexSurfaceButtons(hexSelected);
-            return;
-        }
-
-        if (HexActionHandler.instance.CanScoutHex(hexSelected))
-        {
-            ShowHexButtonsHandler.instance.LoadScoutButtons(hexSelected);
-            return;
-        }
-
-        if (HexActionHandler.instance.CanBuildOnHex(hexSelected))
-        {
-            ShowHexButtonsHandler.instance.LoadBuildButtons(hexSelected);
-            return;
-        }
-
-        if (HexActionHandler.instance.CanPlantOnSoilHex(hexSelected))
-        {
-            ShowHexButtonsHandler.instance.LoadPlantSoilButtons(hexSelected);
-            return;
-        }
-
-        if (HexActionHandler.instance.CanHarvestSoilObjOnHex(hexSelected, checkResources: false))
-        {
-            ShowHexButtonsHandler.instance.LoadHarvestSoilButtons(hexSelected);
+            ShowHexButtonsHandler.instance.LoadHexSelectButtons(hexSelected);
             return;
         }
 

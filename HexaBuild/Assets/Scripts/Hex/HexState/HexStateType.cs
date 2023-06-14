@@ -1,6 +1,7 @@
 ﻿public enum HexStateType
 {
     Barren,
+    Base,
     Farm,
     Quarry,
     Soil,

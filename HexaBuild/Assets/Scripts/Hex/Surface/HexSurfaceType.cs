@@ -44,20 +44,6 @@ public static class HexSurfaceExt
         _ => new List<ResourceAmount>()
     };
 
-    public static List<HexSurfaceType> AllowedHexSurfaceTypes(this Hex hex)
-    {
-        if(hex.HexSurfaceType.IsBarren())
-        {
-            return new List<HexSurfaceType>
-            {
-                HexSurfaceType.Sand_Dirt,
-                HexSurfaceType.Light_Grey_Stone,
-            };
-        }
-
-        return new List<HexSurfaceType>();
-    }
-
     public static HexSurfaceType Barren() => HexSurfaceType.Barren;
     public static HexSurfaceType Soil() => HexSurfaceType.Sand_Dirt;
     public static HexSurfaceType BuildingArea() => HexSurfaceType.Light_Grey_Stone;

@@ -5,9 +5,11 @@ using UnityEngine;
 
 public static class HexButtonTooltipTexts
 {
-    public static TooltipTexts Generate(string header, List<ResourceAmount> rscCosts, List<ResourceAmount> rscGains = null)
+    public static TooltipTexts Generate(HexStateType state)
     {
+        var header = state.ToString();
         var content = new List<string>();
+        var rscCosts = state.Props().RscCostsToGetInState;
 
         if (rscCosts.Any())
         {
@@ -23,15 +25,23 @@ public static class HexButtonTooltipTexts
             content.Add("Cost: Free");
         }
 
-        if (rscGains != null && rscGains.Any())
+        if(state.Props().HasRscGains())
         {
-            content.Add("");
-            content.Add("Gains:");
-            foreach (var rscGain in rscGains)
+            var rscGainsProp = state.Props() as IRscGainsInState;
+            var rscGains = rscGainsProp.RscGainsInState;
+
+            if (rscGains != null && rscGains.Any())
             {
-                content.Add("- " + rscGain.Type + ": " + rscGain.Amount);
+                content.Add("");
+                content.Add("Gains:");
+                foreach (var rscGain in rscGains)
+                {
+                    content.Add("- " + rscGain.Type + ": " + rscGain.Amount);
+                }
             }
         }
+
+        
 
         return new TooltipTexts(header, content);
     }

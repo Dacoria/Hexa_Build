@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class HexButtonTooltipCanvas : TooltipCanvas
 {   
-    [ComponentInject] private IHexButtonScript hexButtonScript;
+    [ComponentInject] private HexStateChangeButtonScript hexButtonScript;
 
     private void Awake()
     {

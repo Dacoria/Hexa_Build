@@ -9,10 +9,6 @@ public class Hex : BaseEventCallback
     [ComponentInject] private HighlightHexScript highlightMove;
 
     public Vector3Int HexCoordinates => hexCoordinates.OffSetCoordinates;
-
-    public HexSurfaceType HexSurfaceType;
-
-    public HexObjectOnTileType HexObjectOnTileType; // voor debug + setting purposes
     public HexStateType HexStateType;
 
     public Vector3 OrigPosition;
@@ -27,7 +23,7 @@ public class Hex : BaseEventCallback
         this.hexSurfaceScript = gameObject.AddComponent<HexSurfaceScript>();
         this.hexObjectOnTileScript = gameObject.AddComponent<HexObjectOnTileScript>();
 
-        OrigPosition = this.transform.position;        
+        OrigPosition = this.transform.position;       
     }
 
     public void EnableHighlight(HighlightColorType type) => highlightMove.CurrentColorHighlight = type;
@@ -40,20 +36,10 @@ public class Hex : BaseEventCallback
         }
     }
 
-    public void ScoutHex()
+    public void ChangeState(HexStateType state)
     {
-        ChangeHexSurfaceType(HexSurfaceType.Barren);
-    }
-
-    public void ChangeHexSurfaceType(HexSurfaceType changeToType)
-    {
-        hexSurfaceScript.HexSurfaceTypeChanged(changeToType);
-        HexSurfaceType = changeToType;        
-    }
-
-    public void ChangeHexObjOnTile(HexObjectOnTileType changeToType)
-    {
-        hexObjectOnTileScript.HexObjectOnTileTypeChanged(changeToType);
-        HexObjectOnTileType = changeToType;
+        hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
+        hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile);
+        HexStateType = state;
     }
 }

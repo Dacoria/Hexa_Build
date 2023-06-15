@@ -12,12 +12,12 @@ public interface IHexStateProperty
     public List<HexStateType> PossibleNextStateTypes(Hex hex, bool checkResources = false) =>
         AllowedNextStateTypes.Where(x => x.Props().StateAllowed(hex, checkResources)).ToList();
 
-    protected bool ConditionsForfilledToEnterState(Hex hex) => true;
-    protected bool ConditionsForfilledToLeaveState(Hex hex) => true;
+    protected bool ConditionsForfilledToEnterState(Hex hex) => true; // can overwrite
+    protected bool ConditionsForfilledToLeaveState(Hex hex) => true; // can overwrite
 
     public bool StateAllowed(Hex hex, bool checkResources)
     {
-        if(checkResources && !ResourceHandler.instance.HasResourcesForChange(RscCostsToGetInState))
+        if(checkResources && !ResourceHandler.instance.HasResourcesForUse(RscCostsToGetInState))
         {            
             return false;            
         }

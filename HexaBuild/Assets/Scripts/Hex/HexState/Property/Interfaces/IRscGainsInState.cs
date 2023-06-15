@@ -2,5 +2,6 @@
 
 public interface IRscGainsInState
 {
-    public List<ResourceAmount> RscGainsInState { get; }
+    public ResourceCostGains RscCostGainsInState { get; }
+    public string ButtonImageNameToGetRsc { get; }
 }

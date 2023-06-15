@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HexStateChangeButtonScript : BaseEventCallback
+public class HexStateChangeButtonScript : BaseEventCallback, IHexButtonScript
 {
     private Hex hex;
     private HexStateType newState;
@@ -28,5 +24,5 @@ public class HexStateChangeButtonScript : BaseEventCallback
         hex.ChangeState(newState);
     }    
 
-    public TooltipTexts GetTooltipTexts() => HexButtonTooltipTexts.Generate(newState);
+    public TooltipTexts GetTooltipTexts() => HexButtonTooltipTexts.Generate(newState, HexSelectCategoryType.StateChange);
 }

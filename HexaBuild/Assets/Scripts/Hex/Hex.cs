@@ -40,6 +40,13 @@ public class Hex : BaseEventCallback
     {
         hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
         hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile);
+
+        Destroy(GetComponent<GainRscBehaviour>());
+        if (state.Props().HasRscGains())
+        {
+            gameObject.AddComponent<GainRscBehaviour>();
+        }        
+
         HexStateType = state;
     }
 }

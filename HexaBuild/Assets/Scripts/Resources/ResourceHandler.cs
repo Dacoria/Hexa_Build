@@ -20,19 +20,35 @@ public class ResourceHandler: MonoBehaviour
         currentResources = startingResources;
     }
 
+    public void AddResources(List<ResourceAmount> rscsToAdd)
+    {
+        foreach (var resource in rscsToAdd)
+        {
+            AddResource(resource.Type, resource.Amount);
+        }
+    }
+
     public void AddResource(RscType type, int amount)
     {
         var resource = currentResources.Single(x => x.Type == type);
         resource.Amount += amount;        
     }
 
+    public void RemoveResources(List<ResourceAmount> rscsToRemove)
+    {
+        foreach (var resource in rscsToRemove)
+        {
+            RemoveResource(resource.Type, resource.Amount);
+        }
+    }
+
     public void RemoveResource(RscType type, int amount)
     {
         var resourceInStock = currentResources.Single(x => x.Type == type);
         resourceInStock.Amount -= amount;
-    }  
+    }
 
-    public bool HasResourcesForChange(List<ResourceAmount> resourceCosts)
+    public bool HasResourcesForUse(List<ResourceAmount> resourceCosts)
     {
         foreach (var resourceCost in resourceCosts)
         {

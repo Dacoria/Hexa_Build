@@ -20,8 +20,7 @@ public static class HexStatePropertyExtension
             }
             return _hexStatePropertiesMap;
         }
-    }
- 
+    } 
 
     private static List<IHexStateProperty> CreateHexStatePropertiesMap()
     {

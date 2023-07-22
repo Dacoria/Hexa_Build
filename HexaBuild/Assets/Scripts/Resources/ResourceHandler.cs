@@ -2,15 +2,15 @@
 using System.Linq;
 using UnityEngine;
 
-public class ResourceHandler: MonoBehaviour
+public class ResourceHandler: BaseEventCallback
 {
     public static ResourceHandler instance;
     private List<ResourceAmount> currentResources;
     public IReadOnlyList<ResourceAmount> CurrentResourcesRO => currentResources.AsReadOnly();
 
-    private void Awake()
+    private new void Awake()
     {
-        this.ComponentInject();
+        base.Awake();
         instance = this;       
         currentResources = new List<ResourceAmount>();
     }

@@ -11,15 +11,18 @@ public abstract class BaseEventCallback : MonoBehaviour
 
     protected void OnEnable()
     {
-        if (IsOverwritten("OnGridLoaded")) AE.GridLoaded += OnGridLoaded;    
+        if (IsOverwritten("OnGridLoaded")) AE.GridLoaded += OnGridLoaded;
+        if (IsOverwritten("OnNewTurn")) AE.NewTurn += OnNewTurn;
     }
-
+    
     protected void OnDisable()
     {
         if (IsOverwritten("OnGridLoaded")) AE.GridLoaded -= OnGridLoaded;
+        if (IsOverwritten("OnNewTurn")) AE.NewTurn += OnNewTurn;
     }
-    protected virtual void OnGridLoaded() { }  
-    
+    protected virtual void OnGridLoaded() { }
+    protected virtual void OnNewTurn(int turn) { }
+
 
     // GEEN ABSTRACTE CLASSES!
     private bool IsOverwritten(string functionName)

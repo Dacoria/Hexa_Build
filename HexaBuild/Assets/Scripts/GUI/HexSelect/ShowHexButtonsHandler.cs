@@ -66,7 +66,9 @@ public class ShowHexButtonsHandler : BaseEventCallback
 
     public void LoadGainRscButtons(Hex hexSelected)
     {
-        LoadButtons(Enum.GetValues(typeof(HexGainRscOptionType)).List<HexGainRscOptionType>(),
+        var rscGainTypes = Enum.GetValues(typeof(HexGainRscOptionType)).List<HexGainRscOptionType>();
+
+        LoadButtons(rscGainTypes,
             setAction: (HexGainRscOptionType gainOption, HexGainRscButtonScript buttonScript) =>
                buttonScript.SetHexValue(hexSelected, gainOption)
             );

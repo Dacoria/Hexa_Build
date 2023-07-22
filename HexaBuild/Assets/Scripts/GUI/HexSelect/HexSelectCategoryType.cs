@@ -1,7 +1,7 @@
 ﻿public enum HexSelectCategoryType
 {
     StateChange,
-    GainRsc
+    GainRsc,
 }
 
 public static class HexSelectCategoryTypeExt

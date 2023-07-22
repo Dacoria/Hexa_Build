@@ -1,4 +1,7 @@
-﻿public class ResourceAmount
+﻿using System;
+
+[Serializable]
+public class ResourceAmount
 {
     public int Amount;
     public RscType Type;

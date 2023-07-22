@@ -20,13 +20,7 @@ public class ResourceHandler: MonoBehaviour
         currentResources = startingResources;
     }
 
-    public void AddResources(List<ResourceAmount> rscsToAdd)
-    {
-        foreach (var resource in rscsToAdd)
-        {
-            AddResource(resource.Type, resource.Amount);
-        }
-    }
+    public void AddResources(List<ResourceAmount> rscsToAdd) => rscsToAdd.ForEach(x => AddResource(x.Type, x.Amount));
 
     public void AddResource(RscType type, int amount)
     {
@@ -34,13 +28,7 @@ public class ResourceHandler: MonoBehaviour
         resource.Amount += amount;        
     }
 
-    public void RemoveResources(List<ResourceAmount> rscsToRemove)
-    {
-        foreach (var resource in rscsToRemove)
-        {
-            RemoveResource(resource.Type, resource.Amount);
-        }
-    }
+    public void RemoveResources(List<ResourceAmount> rscsToRemove) => rscsToRemove.ForEach(x => RemoveResource(x.Type, x.Amount));
 
     public void RemoveResource(RscType type, int amount)
     {

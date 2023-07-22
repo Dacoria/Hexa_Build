@@ -26,17 +26,27 @@ public static class HexEditorUtil
         EditorSceneManager.MarkSceneDirty(hex.gameObject.scene);
     }
  
-    public static void HexObjectOnTileTypeChanged(Hex hex, HexObjectOnTileType to)
+    public static void HexObjectOnTileTypeChanged(Hex hex, HexObjectOnTileType to, int hexStateLevel)
     {
         var structureGo = hex.GetStructuresGo();
         DestroyChildrenOfGo(structureGo);
         if(to != HexObjectOnTileType.None)
         {
-            if (Load.GoMap.TryGetValue(to.ToString(), out GameObject result))
+            if (Load.GoMap.TryGetValue(to.ToString() + "_" + hexStateLevel, out GameObject result1))
             {
-                var go = PrefabUtility.InstantiatePrefab(result, structureGo.transform) as GameObject;
-                go.transform.rotation = new Quaternion(0, 180, 0, 0);                
+                var go = PrefabUtility.InstantiatePrefab(result1, structureGo.transform) as GameObject;
+                go.transform.rotation = new Quaternion(0, 180, 0, 0);
+            } 
+            else if (Load.GoMap.TryGetValue(to.ToString(), out GameObject result2))
+            {
+                var go = PrefabUtility.InstantiatePrefab(result2, structureGo.transform) as GameObject;
+                go.transform.rotation = new Quaternion(0, 180, 0, 0);     
             }
+        }
+
+        if(hexStateLevel == -1)
+        {
+            hex.HexStateLevel = 0;
         }
 
         EditorUtility.SetDirty(hex);

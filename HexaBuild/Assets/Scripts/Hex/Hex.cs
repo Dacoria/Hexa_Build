@@ -10,6 +10,7 @@ public class Hex : BaseEventCallback
 
     public Vector3Int HexCoordinates => hexCoordinates.OffSetCoordinates;
     public HexStateType HexStateType;
+    public int HexStateLevel;
 
     public Vector3 OrigPosition;
 
@@ -39,14 +40,26 @@ public class Hex : BaseEventCallback
     public void ChangeState(HexStateType state)
     {
         hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
-        hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile);
+        hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile, state.Props().HexGrowthLevel());
 
-        Destroy(GetComponent<GainRscBehaviour>());
+        Destroy(GetComponent<RscGainBehaviour>());
         if (state.Props().HasRscGains())
         {
-            gameObject.AddComponent<GainRscBehaviour>();
-        }        
+            gameObject.AddComponent<RscGainBehaviour>();
+        }
+
+        Destroy(GetComponent<RscGrowthBehaviour>());
+        if (state.Props().HasRscGrowth())
+        {
+            gameObject.AddComponent<RscGrowthBehaviour>();
+        }
 
         HexStateType = state;
+    }
+
+    public void ChangeStateLevel(int newLevel)
+    {
+        hexObjectOnTileScript.HexObjectOnTileTypeChanged(HexStateType.Props().ObjectOnTile, newLevel);
+        HexStateLevel = newLevel;
     }
 }

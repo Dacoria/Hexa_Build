@@ -21,7 +21,7 @@ public class RscGrowthBehaviour : BaseEventCallback
         }
     }
 
-    protected override void OnNewTurn(int turn)
+    protected override void OnNewTurn()
     {
         if (HasNextLevelGrowth())
         {            

@@ -26,7 +26,7 @@ public abstract class BaseEventCallback : MonoBehaviour
     }
 
     protected virtual void OnGridLoaded() { }
-    protected virtual void OnNewTurn(int turn) { }
+    protected virtual void OnNewTurn() { }
     protected virtual void OnHexStateChanged(Hex hex) { }
     protected virtual void OnHexStateLevelChanged(Hex hex) { }
 

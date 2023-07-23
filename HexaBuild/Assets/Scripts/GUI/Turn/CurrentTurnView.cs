@@ -1,14 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
 
-public class CurrentTurnView : BaseEventCallbackSlowUpdate
+public class CurrentTurnView : BaseEventCallback
 {
     [ComponentInject] private TMP_Text text;
 
-    protected override void SlowUpdate()
+    private void Start()
     {
         text.text = "Turn: " + TurnHandler.instance.CurrentTurn;
     }
+
+    protected override void OnNewTurn()
+    {
+        text.text = "Turn: " + TurnHandler.instance.CurrentTurn;
+    }   
 }

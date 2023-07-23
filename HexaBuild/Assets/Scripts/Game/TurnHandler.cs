@@ -21,6 +21,6 @@ public partial class TurnHandler : BaseEventCallback
         CurrentTurn++;
         ResourceHandler.instance.AddResources(ResourcesOnNewTurn);
 
-        AE.NewTurn?.Invoke(CurrentTurn);
+        AE.NewTurn?.Invoke();
     }
 }

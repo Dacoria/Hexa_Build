@@ -35,7 +35,7 @@ public class UiHexLeftClick : BaseEventCallback
         }
     }
 
-    protected override void OnNewTurn(int turn) => HexGrid.instance.DisableAllHighlightsOnHex();
+    protected override void OnNewTurn() => HexGrid.instance.DisableAllHighlightsOnHex();
 
 
     private static void ClickOnTile(Hex hexSelected)

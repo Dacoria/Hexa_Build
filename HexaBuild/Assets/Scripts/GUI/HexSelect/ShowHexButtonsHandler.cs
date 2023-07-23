@@ -86,5 +86,5 @@ public class ShowHexButtonsHandler : BaseEventCallback
         activeButtons.Clear();
     }
 
-    protected override void OnNewTurn(int turn) => RemoveAllButtons();
+    protected override void OnNewTurn() => RemoveAllButtons();
 }

@@ -15,7 +15,7 @@ public class RscGainBehaviour : BaseEventCallback
         }
     }
 
-    protected override void OnNewTurn(int turn)
+    protected override void OnNewTurn()
     {
         var props = hex.HexStateType.Props() as IRscGainsInState;
         ProcessRscCostGains(props.RscCostGainsInStatePerTurn);

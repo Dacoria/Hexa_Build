@@ -46,7 +46,7 @@ public class ShowHexButtonsHandler : BaseEventCallback
     public void LoadHexSelectButtons(Hex hexSelected)
     {
         var availableValues = Enum.GetValues(typeof(HexSelectCategoryType)).List<HexSelectCategoryType>()
-            .Where(x => x.IsCategoryAvailable(hexSelected.HexStateType)).ToList();
+            .Where(x => x.IsCategoryAvailable(hexSelected)).ToList();
 
         LoadButtons(availableValues,
             setAction: (HexSelectCategoryType category, HexSelectCategoryButtonScript buttonScript) =>
@@ -85,4 +85,6 @@ public class ShowHexButtonsHandler : BaseEventCallback
         activeButtons.ForEach(button => Destroy(button.GetGo()));
         activeButtons.Clear();
     }
+
+    protected override void OnNewTurn(int turn) => RemoveAllButtons();
 }

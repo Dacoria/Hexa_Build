@@ -1,43 +1,43 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public static class LoadHelper
 {
-    public static List<T> TypeList<T>(string path) =>
+    private static List<T> TypeList<T>(string path) =>
         Resources
         .LoadAll(path, typeof(T))
         .Cast<T>()
         .ToList();
 
-    public static Dictionary<string, GameObject> CreateGoDict(List<string> rscList)
+    private static List<T> CreatePrefabsFromRscList<T>(List<string> rscPathList)
     {
-        var resultMap = new Dictionary<string, GameObject>();
-        rscList.ForEach(rsc => 
-            resultMap.AddRange(
-                TypeList<GameObject>(rsc).ToDictionary(x => x.name, y => (GameObject)y)
-        ));
-        return resultMap;
+        var result = new List<T>();
+        foreach (var rscPath in rscPathList)
+        {
+            var prefabs = TypeList<T>(rscPath);
+            result.AddRange(prefabs);
+        }
+
+        return result;
     }
 
-    public static Dictionary<string, Material> CreateMaterialDict(List<string> rscList)
+    public static Dictionary<string, GameObject> CreateGoDict(List<string> rscPathList)
     {
-        var resultMap = new Dictionary<string, Material>();
-        rscList.ForEach(rsc =>
-            resultMap.AddRange(
-                TypeList<Material>(rsc).ToDictionary(x => x.name, y => (Material)y)
-        ));
-        return resultMap;
+        var prefabs = CreatePrefabsFromRscList<GameObject>(rscPathList);
+        return prefabs.ToDictionary(x => x.name, y => y);
+    }
+    
+
+    public static Dictionary<string, Material> CreateMaterialDict(List<string> rscPathList)
+    {
+        var prefabs = CreatePrefabsFromRscList<Material>(rscPathList);
+        return prefabs.ToDictionary(x => x.name, y => y);
     }
 
-    public static Dictionary<string, Sprite> CreateSpriteDict(List<string> rscList)
+    public static Dictionary<string, Sprite> CreateSpriteDict(List<string> rscPathList)
     {
-        var resultMap = new Dictionary<string, Sprite>();
-        rscList.ForEach(rsc =>
-            resultMap.AddRange(
-                TypeList<Sprite>(rsc).ToDictionary(x => x.name, y => (Sprite)y)
-        ));
-        return resultMap;
+        var prefabs = CreatePrefabsFromRscList<Sprite>(rscPathList);
+        return prefabs.ToDictionary(x => x.name, y => y);
     }
 }

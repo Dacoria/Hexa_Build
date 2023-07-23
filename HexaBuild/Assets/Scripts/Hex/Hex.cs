@@ -43,11 +43,6 @@ public class Hex : BaseEventCallback
         hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile, state.Props().HexGrowthLevel());
 
         Destroy(GetComponent<RscGainBehaviour>());
-        if (state.Props().HasRscGains())
-        {
-            gameObject.AddComponent<RscGainBehaviour>();
-        }
-
         Destroy(GetComponent<RscGrowthBehaviour>());
         if (state.Props().HasRscGrowth())
         {
@@ -61,5 +56,18 @@ public class Hex : BaseEventCallback
     {
         hexObjectOnTileScript.HexObjectOnTileTypeChanged(HexStateType.Props().ObjectOnTile, newLevel);
         HexStateLevel = newLevel;
+
+        if (newLevel == 4 && HexStateType.Props().HasRscGains())
+        {
+            gameObject.AddComponent<RscGainBehaviour>();
+
+            var structureGo = this.GetStructuresGo();
+            
+            if (Load.GoMap.TryGetValue("BuildingAxe", out GameObject result1))
+            {
+                var go = Instantiate(result1, structureGo.transform);
+                go.transform.rotation = new Quaternion(0, 180, 0, 0);
+            }
+        }
     }
 }

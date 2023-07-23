@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class UiHexLeftClick : MonoBehaviour
+public class UiHexLeftClick : BaseEventCallback
 {
     void Update()
     {  
@@ -34,6 +34,9 @@ public class UiHexLeftClick : MonoBehaviour
             }
         }
     }
+
+    protected override void OnNewTurn(int turn) => HexGrid.instance.DisableAllHighlightsOnHex();
+
 
     private static void ClickOnTile(Hex hexSelected)
     {                  

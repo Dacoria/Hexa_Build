@@ -20,8 +20,6 @@ public class HexObjectOnTileScript : BaseEventCallback
                 var go = Instantiate(result2, structureGo.transform);
                 go.transform.rotation = new Quaternion(0, 180, 0, 0);
             }
-
         }
-
     }
 }

@@ -13,16 +13,11 @@ public class HexNeighbours
         Vector3Int hexCoordinates, 
         int range, 
         bool showOnlyVisibleTiles, 
-        bool showOnlyFurthestRange, 
         bool includeStartHex
     )
     {
         var neighbours = GetNeighboursForWithDirection(hexTileDict, hexCoordinates, range);
 
-        if (showOnlyFurthestRange)
-        {            
-            neighbours = neighbours.Where(neighbour => Direction.GetRangeFromCoordinates(hexCoordinates, neighbour) == range).ToList();
-        }
         if (showOnlyVisibleTiles)
         {
             neighbours = neighbours.Where(neighbour => neighbour.GetHex().HexStateType.Props().Surface.IsVisible()).ToList();                

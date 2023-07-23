@@ -61,20 +61,16 @@ public class HexGrid : BaseEventCallback
         }
     }    
 
-    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool showOnlyVisibleTiles = true, bool showOnlyFurthestRange = false, bool includeStartHex = false)
+    public List<Vector3Int> GetNeighboursFor(Vector3Int hexCoordinates, int range = 1, bool showOnlyVisibleTiles = true, bool includeStartHex = false)
     {
         return hexNeighbours.GetNeighboursFor(
             hexTileDict: hexTileDict,
             hexCoordinates: hexCoordinates,
             range: range,
             showOnlyVisibleTiles: showOnlyVisibleTiles,
-            showOnlyFurthestRange: showOnlyFurthestRange,
             includeStartHex: includeStartHex
         );
     }
-
-    // voor A*
-    public float Cost(Vector3Int current, Vector3Int directNeighbor) => 1;
 
     public void DisableAllHighlightsOnHex()
     {

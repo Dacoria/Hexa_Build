@@ -44,24 +44,6 @@ public static class Direction
     public static Dictionary<DirectionType, Vector3Int> GetDirectionsDict(Vector3Int coor) => GetDirectionsDict(coor.z);
 
 
-    private static DirectionType GetDirectionFromCoordinates(Vector3Int hexFromCoor, Vector3Int hexToCoor)
-    {
-        var diffV3 = hexToCoor - hexFromCoor;
-        var directionDic = GetDirectionsDict(hexFromCoor);
-
-        var result = directionDic.Single(x => x.Value == diffV3).Key;
-        return result;
-    }
-
-    public static int GetRangeFromCoordinates(Vector3Int from, Vector3Int to) => GetPathToHex(from, to).Count();
-
-    private static List<Vector3Int> GetPathToHex(Vector3Int from, Vector3Int to)
-    {
-        var astar = new AStarSearch(from, to);
-        var path = astar.FindPath();
-        return path;
-    }
-
     public static Vector3Int GetNewHexCoorFromDirection(this Vector3Int hexFromCoor, DirectionType dir, int steps = 1)
     {
         var dirs = new List<DirectionType>();

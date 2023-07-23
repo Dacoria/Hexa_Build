@@ -1,12 +1,30 @@
 ﻿using System.Collections.Generic;
 
-public class WheatsHexStateProperty : IHexStateProperty // , IRscGrowthInState
+public class WheatsHexStateProperty : IHexStateProperty, IRscGrowthInState, IRscGainsInState
 {
     public HexStateType Type => HexStateType.Wheats;
     public HexSurfaceType Surface => HexSurfaceExt.Soil();
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.Grain;
     public string ButtonImageNameToGetInState => "Grain";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Energy, 5, RscType.Wood, 2);
-    //public List<RscGrowthLevel> RscPerGrowthLevel => RscGrow.CreateList(1, 10, 40, 100);
-    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Farm };
+    public List<RscGrowthLevel> RscGrowthLevels => RscGrow.CreateList(1, 3, 8);
+
+    public ResourceCostGains RscCostGainsInStatePerTurn =>
+        new ResourceCostGains
+        {
+            Costs = Utils.Rsc(),
+            Gains = Utils.Rsc(RscType.Mana, 2)[0],
+        };
+    public ResourceCostGains RscCostGainsInStatePerAction =>
+        new ResourceCostGains
+        {
+            Gains = Utils.Rsc(RscType.Mana, 2)[0],
+            Costs = Utils.Rsc(RscType.Energy, 5),
+        };
+    public string ButtonImageNameToGetRsc => "Take";
+    public RscType RscType => RscType.Mana;
+    public int RscAvailableInit => 0;
+
+    public HexStateType StateToIfNoMoreRsc => HexStateType.Soil;
+    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Soil };
 }

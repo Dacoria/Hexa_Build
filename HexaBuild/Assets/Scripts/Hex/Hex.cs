@@ -81,6 +81,12 @@ public class Hex : BaseEventCallback
         if (state.Props().HasRscGrowth())
         {
             gameObject.AddComponent<RscGrowthBehaviour>();
+        }
+
+        // Verplaatsen naar build buttons tzt
+        if(state == HexStateType.Stones)
+        {
+            AddRscGainObjects("BuildingPickAxe");
         }        
     }
 
@@ -89,19 +95,24 @@ public class Hex : BaseEventCallback
         hexObjectOnTileScript.HexObjectOnTileTypeChanged(HexStateType.Props().ObjectOnTile, newLevel);
         HexStateLevel = newLevel;
 
-        if (newLevel == 4 && HexStateType.Props().HasRscGains())
+        // Verplaatsen naar build buttons tzt
+        if (newLevel == 4 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Trees)
         {
-            AddRscGainObjects();
+            AddRscGainObjects("BuildingAxe");
+        }
+        if (newLevel == 3 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Wheats)
+        {
+            AddRscGainObjects("BuildingScythe");
         }
     }
 
-    private void AddRscGainObjects()
+    private void AddRscGainObjects(string objToSummon)
     {
         gameObject.AddComponent<RscGainBehaviour>();
 
         var structureGo = this.GetStructuresGo();
 
-        if (Load.GoMap.TryGetValue("BuildingAxe", out GameObject result1))
+        if (Load.GoMap.TryGetValue(objToSummon, out GameObject result1))
         {
             var go = Instantiate(result1, structureGo.transform);
             go.transform.rotation = new Quaternion(0, 180, 0, 0);

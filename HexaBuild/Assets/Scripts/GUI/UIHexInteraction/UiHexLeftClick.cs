@@ -40,6 +40,11 @@ public class UiHexLeftClick : BaseEventCallback
 
     private static void ClickOnTile(Hex hexSelected)
     {                  
+        if(hexSelected.HexStateType == HexStateType.Transparent)
+        {
+            return;
+        }
+
         hexSelected.EnableHighlight(HighlightColorType.Green);
         var allowedNextStates = hexSelected.HexStateType.Props().PossibleNextStateTypes(hexSelected);
 

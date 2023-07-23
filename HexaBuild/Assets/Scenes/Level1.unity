@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.057520986, g: 0.030584484, b: 0.016846966, a: 1}
+  m_IndirectSpecularColor: {r: 0.12030684, g: 0.081000306, b: 0.052813724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -209,6 +209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -478,6 +483,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -907,6 +917,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -1096,6 +1111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -1205,6 +1225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1333,6 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -1438,6 +1468,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c85d460f24bc0e4e88100e3a972c4c5, type: 3}
+--- !u!1001 &115064200
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1109741274}
+    m_Modifications:
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702609009969806643, guid: 0cf1045544c2599429a676344e7633dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Base
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cf1045544c2599429a676344e7633dc, type: 3}
 --- !u!4 &117699112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8594558758828914871, guid: eda0d380e5ea7d54287af7b0ab280b7f,
@@ -1535,6 +1634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1655,6 +1759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -1783,6 +1892,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -1893,6 +2007,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -1990,6 +2109,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2405,6 +2529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -2516,6 +2645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -2754,6 +2888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3069,6 +3208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -3335,6 +3479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -3439,6 +3588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -3712,6 +3866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -3824,6 +3983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4104,6 +4268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -4712,6 +4881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -4885,6 +5059,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5081,6 +5260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -5542,6 +5726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -5806,6 +5995,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -5929,6 +6123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 0
       objectReference: {fileID: 0}
@@ -6044,6 +6243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -6143,6 +6347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -6411,6 +6620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStartPlayer
       value: 0
       objectReference: {fileID: 0}
@@ -6546,6 +6760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 0
       objectReference: {fileID: 0}
@@ -6671,6 +6890,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -6792,6 +7016,11 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexStateType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
@@ -6987,6 +7216,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -7473,6 +7707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -7800,6 +8039,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStartPlayer
       value: 0
       objectReference: {fileID: 0}
@@ -8001,6 +8245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8254,6 +8503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -8672,6 +8926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -8858,6 +9117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -8957,6 +9221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9062,6 +9331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -9090,75 +9364,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 751774183}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &775296486
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1109741274}
-    m_Modifications:
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969635603, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702609009969806643, guid: 0cf1045544c2599429a676344e7633dc,
-        type: 3}
-      propertyPath: m_Name
-      value: Base
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0cf1045544c2599429a676344e7633dc, type: 3}
 --- !u!1001 &780758205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9249,6 +9454,11 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexStateType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
@@ -9371,6 +9581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -9562,6 +9777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -9675,6 +9895,11 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexStateType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
@@ -9868,6 +10093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -10029,6 +10259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -10570,6 +10805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -10868,6 +11108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -10985,6 +11230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -11092,6 +11342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11209,6 +11464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11498,6 +11758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -11806,6 +12071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12146,6 +12416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -12332,6 +12607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -12449,6 +12729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -12647,6 +12932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -12821,6 +13111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -12953,6 +13248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -13055,6 +13355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13308,6 +13613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -13717,6 +14027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -13881,6 +14196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -13968,6 +14288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -14306,6 +14631,11 @@ PrefabInstance:
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
       propertyPath: HexStateType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
@@ -14667,6 +14997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -14856,6 +15191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -15038,6 +15378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -15140,6 +15485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15411,6 +15761,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -15580,6 +15935,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -15690,6 +16050,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -15815,6 +16180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -15930,6 +16300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -16017,6 +16392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16139,6 +16519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16336,6 +16721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -16446,6 +16836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -16550,6 +16945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -16685,6 +17085,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -16797,6 +17202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -17206,6 +17616,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexStartPlayer
       value: 0
       objectReference: {fileID: 0}
@@ -17550,6 +17965,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -17737,6 +18157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -17871,6 +18296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -17981,6 +18411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -18078,6 +18513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18343,6 +18783,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -18460,6 +18905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18597,6 +19047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -18709,6 +19164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -18899,6 +19359,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -19013,6 +19478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -19202,6 +19672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -19401,6 +19876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -19574,6 +20054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -20356,6 +20841,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -20578,6 +21068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -20751,6 +21246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -21451,6 +21951,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
+      propertyPath: _hexStateType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
       propertyPath: HexSurfaceType
       value: 22
       objectReference: {fileID: 0}
@@ -21563,6 +22068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -21727,6 +22237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}
@@ -21915,6 +22430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: HexStateType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
+        type: 3}
+      propertyPath: _hexStateType
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7135274299131677212, guid: eda0d380e5ea7d54287af7b0ab280b7f,
         type: 3}

@@ -9,7 +9,13 @@ public class TooltipHex : MonoBehaviour, ITooltipUIText
     public void Awake()
     {
         this.ComponentInject();
-        gameObject.AddComponent<TooltipUIHandler>(); // regelt het tonen vd juiste text + gedrag -> via ITooltipUIText
+        if (hex.HexStateType != HexStateType.Transparent)
+        {
+            gameObject.AddComponent<TooltipUIHandler>(); // regelt het tonen vd juiste text + gedrag -> via ITooltipUIText
+        }else
+        {
+            Destroy(this);            
+        }
     }
 
     public string GetHeaderText() => "Hex";

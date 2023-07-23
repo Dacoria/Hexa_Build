@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-public interface IRscGrowthInState
+public interface IRscGrowthInState: IRscInState
 {
-    public List<RscGrowthLevel> RscPerGrowthLevel { get; }
+    public List<RscGrowthLevel> RscGrowthLevels { get; }
 }

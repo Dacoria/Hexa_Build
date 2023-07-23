@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 [SelectionBase]
 public class Hex : BaseEventCallback
@@ -9,8 +10,37 @@ public class Hex : BaseEventCallback
     [ComponentInject] private HighlightHexScript highlightMove;
 
     public Vector3Int HexCoordinates => hexCoordinates.OffSetCoordinates;
-    public HexStateType HexStateType;
-    public int HexStateLevel;
+
+    #region HexStateType get+set+event
+    [SerializeField] private HexStateType _hexStateType; // serializable, want editor changes....
+    public HexStateType HexStateType { 
+        get => _hexStateType;
+        set 
+        { 
+            if(_hexStateType != value)
+            {
+                _hexStateType = value;
+                AE.HexStateChanged?.Invoke(this);
+            }
+        }
+    }
+    #endregion
+
+    #region HexStateLevel get+set+event
+    [SerializeField] private int _hexStateLevel; // serializable, want editor changes....
+    public int HexStateLevel
+    {
+        get => _hexStateLevel;
+        set
+        {
+            if (_hexStateLevel != value)
+            {
+                _hexStateLevel = value;
+                AE.HexStateLevelChanged?.Invoke(this);                
+            }
+        }
+    }
+    #endregion
 
     public Vector3 OrigPosition;
 
@@ -42,14 +72,16 @@ public class Hex : BaseEventCallback
         hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
         hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile, state.Props().HexGrowthLevel());
 
-        Destroy(GetComponent<RscGainBehaviour>());
-        Destroy(GetComponent<RscGrowthBehaviour>());
+        HexStateType = state;
+
+        if (state.Props().HasRsc())
+        {
+            gameObject.AddComponent<RscAvailableBehaviour>();
+        }
         if (state.Props().HasRscGrowth())
         {
             gameObject.AddComponent<RscGrowthBehaviour>();
-        }
-
-        HexStateType = state;
+        }        
     }
 
     public void ChangeStateLevel(int newLevel)
@@ -59,15 +91,20 @@ public class Hex : BaseEventCallback
 
         if (newLevel == 4 && HexStateType.Props().HasRscGains())
         {
-            gameObject.AddComponent<RscGainBehaviour>();
+            AddRscGainObjects();
+        }
+    }
 
-            var structureGo = this.GetStructuresGo();
-            
-            if (Load.GoMap.TryGetValue("BuildingAxe", out GameObject result1))
-            {
-                var go = Instantiate(result1, structureGo.transform);
-                go.transform.rotation = new Quaternion(0, 180, 0, 0);
-            }
+    private void AddRscGainObjects()
+    {
+        gameObject.AddComponent<RscGainBehaviour>();
+
+        var structureGo = this.GetStructuresGo();
+
+        if (Load.GoMap.TryGetValue("BuildingAxe", out GameObject result1))
+        {
+            var go = Instantiate(result1, structureGo.transform);
+            go.transform.rotation = new Quaternion(0, 180, 0, 0);
         }
     }
 }

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1230886640129210174}
   - component: {fileID: 2564842629097856784}
   - component: {fileID: 3762141633074937662}
+  - component: {fileID: -7804064236651697463}
   m_Layer: 6
   m_Name: Hex
   m_TagString: 
@@ -83,8 +84,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a488de57b9cc8654fb2a18f1c964867b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HexSurfaceType: 2
-  HexObjectOnTileType: 0
+  _hexStateType: 0
+  HexStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  _hexStateLevel: 0
+  HexStateLevelChanged:
+    m_PersistentCalls:
+      m_Calls: []
   OrigPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2263513362258068212
 MonoBehaviour:
@@ -138,6 +145,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.01, z: 0.5}
   m_Center: {x: 0, y: 1, z: -0.7}
+--- !u!114 &-7804064236651697463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3441048710116059345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d037aacab0bb25a42a245bd143b884dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5410733325540724250
 GameObject:
   m_ObjectHideFlags: 0

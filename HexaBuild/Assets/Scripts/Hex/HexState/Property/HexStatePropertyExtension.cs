@@ -15,7 +15,7 @@ public static class HexStatePropertyExtension
             return -1;
         }
 
-        return growthProp.RscPerGrowthLevel.Min(x => x.Level);
+        return growthProp.RscGrowthLevels.Min(x => x.Level);
     }
 
     private static List<IHexStateProperty> _hexStatePropertiesMap;

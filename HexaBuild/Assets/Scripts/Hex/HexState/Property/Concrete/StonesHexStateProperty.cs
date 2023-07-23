@@ -7,5 +7,5 @@ public class StonesHexStateProperty : IHexStateProperty
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.Stone;
     public string ButtonImageNameToGetInState => "Stone";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Energy, 5, RscType.Wood, 4);
-    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Quarry };
+    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Barren };
 }

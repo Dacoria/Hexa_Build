@@ -3,7 +3,6 @@
     Barren,
     Base,
     Farm,
-    Quarry,
     Soil,
     Stones,
     Transparent,

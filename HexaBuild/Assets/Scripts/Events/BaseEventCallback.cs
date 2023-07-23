@@ -13,15 +13,22 @@ public abstract class BaseEventCallback : MonoBehaviour
     {
         if (IsOverwritten("OnGridLoaded")) AE.GridLoaded += OnGridLoaded;
         if (IsOverwritten("OnNewTurn")) AE.NewTurn += OnNewTurn;
+        if (IsOverwritten("OnHexStateChanged")) AE.HexStateChanged += OnHexStateChanged;
+        if (IsOverwritten("OnHexStateLevelChanged")) AE.HexStateLevelChanged += OnHexStateLevelChanged;
     }
-    
+
     protected void OnDisable()
     {
         if (IsOverwritten("OnGridLoaded")) AE.GridLoaded -= OnGridLoaded;
-        if (IsOverwritten("OnNewTurn")) AE.NewTurn += OnNewTurn;
+        if (IsOverwritten("OnNewTurn")) AE.NewTurn -= OnNewTurn;
+        if (IsOverwritten("OnHexStateChanged")) AE.HexStateChanged -= OnHexStateChanged;
+        if (IsOverwritten("OnHexStateLevelChanged")) AE.HexStateLevelChanged -= OnHexStateLevelChanged;
     }
+
     protected virtual void OnGridLoaded() { }
     protected virtual void OnNewTurn(int turn) { }
+    protected virtual void OnHexStateChanged(Hex hex) { }
+    protected virtual void OnHexStateLevelChanged(Hex hex) { }
 
 
     // GEEN ABSTRACTE CLASSES!

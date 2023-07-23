@@ -17,9 +17,9 @@ public static class HexButtonTooltipTexts
                 break;
             case HexSelectCategoryType.GainRsc:
                 var props = state.Props() as IRscGainsInState;
-                AddRscCostsToText(content, props.RscCostGainsInState.Costs);
+                AddRscCostsToText(content, props.RscCostGainsInStatePerAction.Costs);
                 content.Add("");
-                AddRscGainsToText(content, props.RscCostGainsInState.Gains);
+                AddRscGainsToText(content, props.RscCostGainsInStatePerAction.Gains);
                 break;
             default:
                 throw new Exception("");
@@ -44,15 +44,12 @@ public static class HexButtonTooltipTexts
         }
     }
 
-    private static void AddRscGainsToText(List<string> content, List<ResourceAmount> rscGains)
+    private static void AddRscGainsToText(List<string> content, ResourceAmount rscGain)
     {
-        if (rscGains.Any())
+        if (rscGain != null)
         {
             content.Add("Gains:");
-            foreach (var rscGain in rscGains)
-            {
-                content.Add("- " + rscGain.Type + ": " + rscGain.Amount);
-            }
+            content.Add("- " + rscGain.Type + ": " + rscGain.Amount);
         }
         else
         {

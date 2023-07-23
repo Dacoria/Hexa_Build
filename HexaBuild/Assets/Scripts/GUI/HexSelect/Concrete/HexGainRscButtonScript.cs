@@ -13,16 +13,16 @@ public class HexGainRscButtonScript : BaseEventCallback, IHexButtonScript
         var props = relatedHex.HexStateType.Props() as IRscGainsInState;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(type.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(ResourceHandler.instance.HasResourcesForUse(props.RscCostGainsInState.Costs));
+        uiHexButton.SetAllowed(ResourceHandler.instance.HasResourcesForUse(props.RscCostGainsInStatePerAction.Costs));
         uiHexButton.SetButtonAction(() => Click());
     }
 
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        var props = hex.HexStateType.Props() as IRscGainsInState;
-        ResourceHandler.instance.RemoveResources(props.RscCostGainsInState.Costs);
-        ResourceHandler.instance.AddResources(props.RscCostGainsInState.Gains);
+        var gainBehaviour = hex.GetComponent<RscGainBehaviour>();
+
+        gainBehaviour.ManualGainRsc();        
     }
 
     public TooltipTexts GetTooltipTexts() => HexButtonTooltipTexts.Generate(hex.HexStateType, HexSelectCategoryType.GainRsc);

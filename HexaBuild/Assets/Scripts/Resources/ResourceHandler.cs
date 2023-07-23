@@ -38,6 +38,8 @@ public class ResourceHandler: BaseEventCallback
 
     public bool HasResourcesForUse(List<ResourceAmount> resourceCosts)
     {
+        if (resourceCosts == null) { return false; }
+
         foreach (var resourceCost in resourceCosts)
         {
             var resourceTypeInStock = currentResources.Single(x => x.Type == resourceCost.Type);

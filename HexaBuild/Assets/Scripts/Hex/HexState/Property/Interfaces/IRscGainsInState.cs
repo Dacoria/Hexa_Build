@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 
-public interface IRscGainsInState
+public interface IRscGainsInState: IRscInState
 {
-    public ResourceCostGains RscCostGainsInState { get; }
+    public ResourceCostGains RscCostGainsInStatePerTurn { get; }
+    public ResourceCostGains RscCostGainsInStatePerAction { get; }
     public string ButtonImageNameToGetRsc { get; }
 }

@@ -8,14 +8,19 @@ public static partial class Utils
 
     public static bool HasRscGains(this IHexStateProperty prop)
     {
-        var rscGains = prop.Type.Props() as IRscGainsInState;
-        return rscGains != null;
+        var rscGainsState = prop.Type.Props() as IRscGainsInState;
+        return rscGainsState != null;
     }
 
     public static bool HasRscGrowth(this IHexStateProperty prop)
     {
-        var rscGrowth = prop.Type.Props() as IRscGrowthInState;
-        return rscGrowth != null;
+        var rscGrowthState = prop.Type.Props() as IRscGrowthInState;
+        return rscGrowthState != null;
     }
 
+    public static bool HasRsc(this IHexStateProperty prop)
+    {
+        var rscState = prop.Type.Props() as IRscInState;
+        return rscState != null;
+    }
 }

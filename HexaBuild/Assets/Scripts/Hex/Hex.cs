@@ -16,15 +16,16 @@ public class Hex : BaseEventCallback
     public HexStateType HexStateType { 
         get => _hexStateType;
         set 
-        { 
-            if(_hexStateType != value)
+        {
+            _hexStateType = value;
+            if (!Utils.IsEditor())
             {
-                _hexStateType = value;
+                ChangeState();
                 AE.HexStateChanged?.Invoke(this);
             }
         }
     }
-    #endregion
+#endregion
 
     #region HexStateLevel get+set+event
     [SerializeField] private int _hexStateLevel; // serializable, want editor changes....
@@ -33,14 +34,15 @@ public class Hex : BaseEventCallback
         get => _hexStateLevel;
         set
         {
-            if (_hexStateLevel != value)
+            _hexStateLevel = value;
+            if (!Utils.IsEditor())
             {
-                _hexStateLevel = value;
-                AE.HexStateLevelChanged?.Invoke(this);                
+                ChangeStateLevel();
+                AE.HexStateLevelChanged?.Invoke(this);
             }
         }
     }
-    #endregion
+#endregion
 
     public Vector3 OrigPosition;
 
@@ -67,12 +69,9 @@ public class Hex : BaseEventCallback
         }
     }
 
-    public void ChangeState(HexStateType state)
+    private void ChangeState()
     {
-        hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
-        hexObjectOnTileScript.HexObjectOnTileTypeChanged(state.Props().ObjectOnTile, state.Props().HexGrowthLevel());
-
-        HexStateType = state;
+        var state = HexStateType;        
 
         if (state.Props().HasRsc())
         {
@@ -82,27 +81,35 @@ public class Hex : BaseEventCallback
         {
             gameObject.AddComponent<RscGrowthBehaviour>();
         }
-
-        // Verplaatsen naar build buttons tzt
         if(state == HexStateType.Stones)
         {
-            AddRscGainObjects("BuildingPickAxe");
-        }        
-    }
+            gameObject.AddComponent<StoneGainBehaviour>();
+        }
 
-    public void ChangeStateLevel(int newLevel)
-    {
-        hexObjectOnTileScript.HexObjectOnTileTypeChanged(HexStateType.Props().ObjectOnTile, newLevel);
-        HexStateLevel = newLevel;
+        hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
+        HexStateLevel = this.CalcHexStateLevel(); // forceert obj on tile wijziging
 
         // Verplaatsen naar build buttons tzt
-        if (newLevel == 4 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Trees)
+                
+    }
+
+    private void ChangeStateLevel()
+    {        
+        hexObjectOnTileScript.HexObjectOnTileTypeChanged(HexStateType.Props().ObjectOnTile, HexStateLevel);
+
+        // Verplaatsen naar build buttons tzt
+        if (HexStateLevel == 4 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Trees)
         {
             AddRscGainObjects("BuildingAxe");
         }
-        if (newLevel == 3 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Wheats)
+        if (HexStateLevel == 3 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Wheats)
         {
             AddRscGainObjects("BuildingScythe");
+        }
+        if (HexStateLevel >= 101 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Stones)
+        {
+            // elke x opnieuw aanmaken :S
+            AddRscGainObjects("BuildingPickAxe");
         }
     }
 

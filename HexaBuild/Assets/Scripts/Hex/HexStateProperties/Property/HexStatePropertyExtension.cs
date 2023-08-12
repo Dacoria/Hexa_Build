@@ -7,15 +7,21 @@ using UnityEngine;
 public static class HexStatePropertyExtension
 {
     public static IHexStateProperty Props(this HexStateType type) => hexStatePropertiesMap.Single(x => x.Type == type);
-    public static int HexGrowthLevel(this IHexStateProperty hexStateProperty)
+    
+    public static int CalcHexStateLevel(this Hex hex)
     {
-        var growthProp = hexStateProperty as IRscGrowthInState;
-        if(growthProp == null)
+        var growthProp = hex.HexStateType.Props() as IRscGrowthInState;
+        if(growthProp != null)
         {
-            return -1;
+            return growthProp.RscGrowthLevels.Min(x => x.Level);
+        }
+        var stoneGainProp = hex.GetComponent<StoneGainBehaviour>();
+        if (stoneGainProp != null)
+        {
+            return stoneGainProp.GetStoneStateLevel();
         }
 
-        return growthProp.RscGrowthLevels.Min(x => x.Level);
+        return -1;
     }
 
     private static List<IHexStateProperty> _hexStatePropertiesMap;

@@ -9,7 +9,7 @@ public class RscGainBehaviour : BaseEventCallback
 
     protected override void OnHexStateChanged(Hex hex)
     {
-        if (this.hex == hex)
+        if (this.hex == hex && !hex.HexStateType.Props().HasRscGains())
         {
             Destroy(this);
         }
@@ -18,6 +18,7 @@ public class RscGainBehaviour : BaseEventCallback
     protected override void OnNewTurn()
     {
         var props = hex.HexStateType.Props() as IRscGainsInState;
+        if(props == null) { return; }
         ProcessRscCostGains(props.RscCostGainsInStatePerTurn);
     }
 
@@ -69,6 +70,6 @@ public class RscGainBehaviour : BaseEventCallback
     private void NoMoreResourcesAvailableAfterRetrieval()
     {
         var props = hex.HexStateType.Props() as IRscInState;
-        hex.ChangeState(props.StateToIfNoMoreRsc);        
+        hex.HexStateType = props.StateToIfNoMoreRsc;
     }
 }

@@ -18,7 +18,7 @@ public class RscAvailableBehaviour : BaseEventCallback
 
     protected override void OnHexStateChanged(Hex hex)
     {
-        if (this.hex == hex)
+        if (this.hex == hex && !hex.HexStateType.Props().HasRsc())
         {
             Destroy(this);
         }

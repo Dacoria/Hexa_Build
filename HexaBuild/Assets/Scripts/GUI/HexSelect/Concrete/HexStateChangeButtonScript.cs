@@ -21,7 +21,7 @@ public class HexStateChangeButtonScript : BaseEventCallback, IHexButtonScript
     public void Click()
     {
         ShowHexButtonsHandler.instance.RemoveAllButtons();
-        hex.ChangeState(newState);
+        hex.HexStateType = newState;
     }    
 
     public TooltipTexts GetTooltipTexts() => HexButtonTooltipTexts.Generate(newState, HexSelectCategoryType.StateChange);

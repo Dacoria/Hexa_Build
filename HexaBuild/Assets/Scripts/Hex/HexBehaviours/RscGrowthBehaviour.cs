@@ -10,12 +10,12 @@ public class RscGrowthBehaviour : BaseEventCallback
     private void Start()
     {        
         var props = hex.HexStateType.Props() as IRscGrowthInState;
-        hex.ChangeStateLevel(props.RscGrowthLevels.Min(x => x.Level));
+        hex.HexStateLevel = props.RscGrowthLevels.Min(x => x.Level);
     }
 
     protected override void OnHexStateChanged(Hex hex)
     {
-        if (this.hex == hex)
+        if (this.hex == hex && !hex.HexStateType.Props().HasRscGrowth())
         {
             Destroy(this);
         }
@@ -24,8 +24,8 @@ public class RscGrowthBehaviour : BaseEventCallback
     protected override void OnNewTurn()
     {
         if (HasNextLevelGrowth())
-        {            
-            hex.ChangeStateLevel(GetNextLevelGrowth());
+        {
+            hex.HexStateLevel = GetNextLevelGrowth();
         }        
     }
 
@@ -57,7 +57,7 @@ public class RscGrowthBehaviour : BaseEventCallback
 
     protected override void OnHexStateLevelChanged(Hex hex)
     {
-        if (hex == this.hex)
+        if (hex == this.hex && hex.HexStateType.Props().HasRscGrowth())
         {
             var props = hex.HexStateType.Props() as IRscGrowthInState;
             var newRscAmountForLevel = props.RscGrowthLevels.Single(x => x.Level == hex.HexStateLevel).CountRscAvailable;

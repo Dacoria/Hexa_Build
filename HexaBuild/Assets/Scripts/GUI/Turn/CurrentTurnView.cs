@@ -12,5 +12,5 @@ public class CurrentTurnView : BaseEventCallback
     protected override void OnNewTurn()
     {
         text.text = "Turn: " + TurnHandler.instance.CurrentTurn;
-    }   
+    }
 }

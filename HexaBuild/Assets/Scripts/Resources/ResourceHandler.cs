@@ -24,6 +24,7 @@ public class ResourceHandler: BaseEventCallback
 
     public void AddResource(RscType type, int amount)
     {
+        if (amount <= 0) { throw new System.Exception(); }
         var resource = currentResources.Single(x => x.Type == type);
         resource.Amount += amount;        
     }
@@ -32,16 +33,19 @@ public class ResourceHandler: BaseEventCallback
 
     public void RemoveResource(RscType type, int amount)
     {
+        if(amount <= 0) { throw new System.Exception(); }
         var resourceInStock = currentResources.Single(x => x.Type == type);
         resourceInStock.Amount -= amount;
     }
 
-    public bool HasResourcesForUse(List<ResourceAmount> resourceCosts)
+    public bool HasResourcesToSpendInStock(List<ResourceAmount> resourceCosts)
     {
         if (resourceCosts == null) { return false; }
 
         foreach (var resourceCost in resourceCosts)
         {
+            if (resourceCost.Amount < 0) { throw new System.Exception(); }
+
             var resourceTypeInStock = currentResources.Single(x => x.Type == resourceCost.Type);
             if (resourceTypeInStock.Amount < resourceCost.Amount)
             {

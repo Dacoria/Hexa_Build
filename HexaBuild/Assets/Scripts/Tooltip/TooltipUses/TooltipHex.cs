@@ -32,7 +32,8 @@ public class TooltipHex : MonoBehaviour, ITooltipUIText
 
         if(rscAvailableBehaviour != null)
         {
-            result.Add("Rsc type", rscAvailableBehaviour.RscType.ToString());
+            var props = hex.HexStateType.Props() as IRscInState;
+            result.Add("Rsc type", props.RscType.ToString());
             result.Add("Rsc available", rscAvailableBehaviour.ResourcesAvailable.ToString());
         }
         if (rscGrowthBehaviour != null)

@@ -1,7 +1,8 @@
 ﻿public enum RscType
 {
     Energy,
-    Mana,
+    Mana,    
     Wood,
-    Stone
+    Stone,
+    Food
 }

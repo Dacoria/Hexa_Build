@@ -6,13 +6,11 @@ public class RscAvailableBehaviour : BaseEventCallback
 {
     [ComponentInject] private Hex hex;
 
-    public RscType RscType { get; private set; }
     public int ResourcesAvailable { get; private set; }
 
     private void Start()
     {
         var props = hex.HexStateType.Props() as IRscInState;
-        RscType = props.RscType;
         ResourcesAvailable = props.RscAvailableInit;
     }
 

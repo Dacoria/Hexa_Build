@@ -13,7 +13,7 @@ public class HexGainRscButtonScript : BaseEventCallback, IHexButtonScript
         var props = relatedHex.HexStateType.Props() as IRscGainsInState;
 
         uiHexButton.SetSprite(Load.SpriteMap.Get(type.ToString()), isTransparentImage: true);
-        uiHexButton.SetAllowed(ResourceHandler.instance.HasResourcesForUse(props.RscCostGainsInStatePerAction.Costs));
+        uiHexButton.SetAllowed(ResourceHandler.instance.HasResourcesToSpendInStock(props.RscCostGainsInStatePerAction.Costs));
         uiHexButton.SetButtonAction(() => Click());
     }
 

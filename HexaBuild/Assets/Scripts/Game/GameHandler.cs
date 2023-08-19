@@ -19,6 +19,7 @@ public partial class GameHandler : BaseEventCallback
             new ResourceAmount(15, RscType.Mana),
             new ResourceAmount(5, RscType.Wood),
             new ResourceAmount(3, RscType.Stone),
+            new ResourceAmount(10, RscType.Food),
         };
         ResourceHandler.instance.SetInitResources(startResources);
 

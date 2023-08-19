@@ -13,16 +13,16 @@ public class WheatsHexStateProperty : IHexStateProperty, IRscGrowthInState, IRsc
         new ResourceCostGains
         {
             Costs = Utils.Rsc(),
-            Gains = Utils.Rsc(RscType.Mana, 2)[0],
+            Gains = Utils.Rsc(RscType.Food, 2)[0],
         };
     public ResourceCostGains RscCostGainsInStatePerAction =>
         new ResourceCostGains
         {
-            Gains = Utils.Rsc(RscType.Mana, 2)[0],
+            Gains = Utils.Rsc(RscType.Food, 2)[0],
             Costs = Utils.Rsc(RscType.Energy, 5),
         };
     public string ButtonImageNameToGetRsc => "Take";
-    public RscType RscType => RscType.Mana;
+    public RscType RscType => RscType.Food;
     public int RscAvailableInit => 0;
 
     public HexStateType StateToIfNoMoreRsc => HexStateType.Soil;

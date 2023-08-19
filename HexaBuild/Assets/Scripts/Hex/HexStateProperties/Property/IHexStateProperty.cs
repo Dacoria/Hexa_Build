@@ -17,7 +17,7 @@ public interface IHexStateProperty
 
     public bool StateAllowed(Hex hex, bool checkResources)
     {
-        if(checkResources && !ResourceHandler.instance.HasResourcesForUse(RscCostsToGetInState))
+        if(checkResources && !ResourceHandler.instance.HasResourcesToSpendInStock(RscCostsToGetInState))
         {            
             return false;            
         }

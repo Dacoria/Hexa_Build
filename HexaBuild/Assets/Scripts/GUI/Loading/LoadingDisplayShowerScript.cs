@@ -2,18 +2,20 @@ using System.Collections.Generic;
 
 public class LoadingDisplayShowerScript : BaseEventCallbackSlowUpdate
 {
-    private void Start()
-    {
-        Settings.UserInterfaceIsLocked = true;
-    }
+    private bool gameOver;
 
     protected override void SlowUpdate()
     {
-        transform.GetChild(0).gameObject.SetActive(Settings.UserInterfaceIsLocked);
+        if (gameOver)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.SetActive(Settings.UserInterfaceIsLocked);
+        }
     }
 
-    protected override void OnGridLoaded()
-    {
-        Settings.UserInterfaceIsLocked = false;
-    }
+    protected override void OnGameOver() => gameOver = true;
+
 }

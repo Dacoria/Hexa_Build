@@ -41,7 +41,7 @@ public class RscGainBehaviour : BaseEventCallback
 
     private void ProcesRscCosts(ResourceCostGains costGainsPerTurn)
     {
-        if (ResourceHandler.instance.HasResourcesForUse(costGainsPerTurn.Costs))
+        if (ResourceHandler.instance.HasResourcesToSpendInStock(costGainsPerTurn.Costs))
         {
             ResourceHandler.instance.RemoveResources(costGainsPerTurn.Costs);
         }

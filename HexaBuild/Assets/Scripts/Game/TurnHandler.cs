@@ -7,7 +7,7 @@ public partial class TurnHandler : BaseEventCallback
 {
     public static TurnHandler instance;
     [HideInInspector] public int CurrentTurn;
-    public List<ResourceAmount> ResourcesOnNewTurn;
+    [SerializeField] private List<ResourceAmount> ResourcesChangeNewTurn;
 
     private new void Awake()
     {
@@ -19,8 +19,19 @@ public partial class TurnHandler : BaseEventCallback
     public void NextTurn()
     {
         CurrentTurn++;
-        ResourceHandler.instance.AddResources(ResourcesOnNewTurn);
+        ResourceHandler.instance.AddResources(ResourcesChangeNewTurn.Where(x => x.Amount > 0).ToList());
+        
+        var rscsToLose = ResourcesChangeNewTurn.Where(x => x.Amount < 0).ToList();
+        var rscsToLoseAbs = rscsToLose.Select(x => new ResourceAmount(x.Type, Mathf.Abs(x.Amount))).ToList();
 
-        AE.NewTurn?.Invoke();
+        if (ResourceHandler.instance.HasResourcesToSpendInStock(rscsToLoseAbs))
+        {
+            ResourceHandler.instance.RemoveResources(rscsToLoseAbs);
+            AE.NewTurn?.Invoke();
+        }
+        else
+        {
+            AE.GameOver?.Invoke();
+        }
     }
 }

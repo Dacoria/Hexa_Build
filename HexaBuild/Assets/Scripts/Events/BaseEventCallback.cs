@@ -13,6 +13,7 @@ public abstract class BaseEventCallback : MonoBehaviour
     {
         if (IsOverwritten("OnGridLoaded")) AE.GridLoaded += OnGridLoaded;
         if (IsOverwritten("OnNewTurn")) AE.NewTurn += OnNewTurn;
+        if (IsOverwritten("OnGameOver")) AE.GameOver += OnGameOver;
         if (IsOverwritten("OnHexStateChanged")) AE.HexStateChanged += OnHexStateChanged;
         if (IsOverwritten("OnHexStateLevelChanged")) AE.HexStateLevelChanged += OnHexStateLevelChanged;
     }
@@ -21,12 +22,14 @@ public abstract class BaseEventCallback : MonoBehaviour
     {
         if (IsOverwritten("OnGridLoaded")) AE.GridLoaded -= OnGridLoaded;
         if (IsOverwritten("OnNewTurn")) AE.NewTurn -= OnNewTurn;
+        if (IsOverwritten("OnGameOver")) AE.GameOver -= OnGameOver;
         if (IsOverwritten("OnHexStateChanged")) AE.HexStateChanged -= OnHexStateChanged;
         if (IsOverwritten("OnHexStateLevelChanged")) AE.HexStateLevelChanged -= OnHexStateLevelChanged;
     }
 
     protected virtual void OnGridLoaded() { }
     protected virtual void OnNewTurn() { }
+    protected virtual void OnGameOver() { }
     protected virtual void OnHexStateChanged(Hex hex) { }
     protected virtual void OnHexStateLevelChanged(Hex hex) { }
 

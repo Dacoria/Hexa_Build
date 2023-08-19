@@ -6,6 +6,7 @@ public static class AE
 {
     public static Action GridLoaded;
     public static Action NewTurn;
+    public static Action GameOver;
 
     public static Action<Hex> HexStateChanged;
     public static Action<Hex> HexStateLevelChanged;

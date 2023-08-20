@@ -13,6 +13,12 @@ public partial class GameHandler : BaseEventCallback
 
     private void Start()
     {
+        SetInitRsc();
+        HexGrid.instance.LoadGrid();
+    }
+  
+    private void SetInitRsc()
+    {
         var startResources = new List<ResourceAmount>
         {
             new ResourceAmount(25, RscType.Energy),
@@ -22,7 +28,5 @@ public partial class GameHandler : BaseEventCallback
             new ResourceAmount(10, RscType.Food),
         };
         ResourceHandler.instance.SetInitResources(startResources);
-
-        HexGrid.instance.LoadGrid();
     }
 }

@@ -18,7 +18,6 @@ public partial class TurnHandler : BaseEventCallback
 
     public void NextTurn()
     {
-        CurrentTurn++;
         ResourceHandler.instance.AddResources(ResourcesChangeNewTurn.Where(x => x.Amount > 0).ToList());
         
         var rscsToLose = ResourcesChangeNewTurn.Where(x => x.Amount < 0).ToList();
@@ -26,6 +25,7 @@ public partial class TurnHandler : BaseEventCallback
 
         if (ResourceHandler.instance.HasResourcesToSpendInStock(rscsToLoseAbs))
         {
+            CurrentTurn++;
             ResourceHandler.instance.RemoveResources(rscsToLoseAbs);
             AE.NewTurn?.Invoke();
         }

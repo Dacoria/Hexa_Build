@@ -85,13 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hexStateType: 0
-  HexStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
   _hexStateLevel: 0
-  HexStateLevelChanged:
-    m_PersistentCalls:
-      m_Calls: []
   OrigPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2263513362258068212
 MonoBehaviour:

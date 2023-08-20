@@ -45,7 +45,25 @@ public class HexGrid : BaseEventCallback
             var lerp = hex.gameObject.AddComponent<LerpMovement>();
             lerp.MoveToDestination(hex.transform.position, duration: 1.5f, startPosition: hex.transform.position + new Vector3(0, -100, 0), delayedStart: hex.transform.position.x * 0.08f);
         }
-    }    
+    }
+
+    public void CreateNewHex(Vector3Int coordinates)
+    {
+        var hexPrefab = Load.GoMap.Get("Hex");
+        var hexGo = Instantiate(hexPrefab, coordinates.ConvertCoordinatesToPosition(), Quaternion.identity, transform);
+        var hexScript = hexGo.GetComponent<Hex>();
+
+        hexTileDict[hexScript.HexCoordinates] = hexScript;
+
+        var hexForestPrefab = Load.GoMap.Get("hex_forest");
+        var mainGo = Utils.GetMainGo(hexScript);
+        Instantiate(hexForestPrefab, mainGo.transform);
+
+        hexScript.HexStateType = HexStateType.Barren;
+
+        var lerp = hexGo.AddComponent<LerpMovement>();
+        lerp.MoveToDestination(hexGo.transform.position, duration: 1.5f, startPosition: hexGo.transform.position + new Vector3(0, -100, 0));
+    }
 
     private bool HexGridLoaded;
 
@@ -69,6 +87,14 @@ public class HexGrid : BaseEventCallback
             range: range,
             showOnlyVisibleTiles: showOnlyVisibleTiles,
             includeStartHex: includeStartHex
+        );
+    }
+
+    public List<Vector3Int> GetFreePlacesDirectlyAroundHex(Vector3Int hexCoordinates)
+    {
+        return hexNeighbours.GetFreePlacesDirectlyAroundHex(
+            hexTileDict: hexTileDict,
+            hexCoordinates: hexCoordinates
         );
     }
 

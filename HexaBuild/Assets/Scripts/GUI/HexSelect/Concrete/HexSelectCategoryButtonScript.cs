@@ -32,6 +32,9 @@ public class HexSelectCategoryButtonScript : BaseEventCallback, IHexButtonScript
             case HexSelectCategoryType.GainRsc:
                 ShowHexButtonsHandler.instance.LoadGainRscButtons(hex);
                 break;
+            case HexSelectCategoryType.Expand:
+                ShowHexButtonsHandler.instance.LoadExpandButtons(hex);
+                break;
             default:
                 throw new Exception("");
         }

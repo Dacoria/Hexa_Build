@@ -3,7 +3,7 @@ using UnityEngine;
 public class HexSurfaceScript : BaseEventCallback
 {
     [ComponentInject] private Hex hex;
-
+      
     public void HexSurfaceTypeChanged(HexSurfaceType to)
     {
         var mainGo = Utils.GetMainGo(hex);

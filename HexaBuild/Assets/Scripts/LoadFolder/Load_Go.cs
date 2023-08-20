@@ -6,6 +6,7 @@ public static partial class Load
     private static List<string> goList = new List<string>
     {
         Statics.LOAD_PATH_GO_OBJ_ON_TILE,
+        Statics.LOAD_PATH_GO_HEX_PREFAB
     };
 
     private static Dictionary<string, GameObject> __goMap;
@@ -20,5 +21,16 @@ public static partial class Load
 
             return __goMap;
         }
+    }
+
+    public static GameObject Get(this Dictionary<string, GameObject> dict, string key)
+    {
+        var go = dict[key];
+        if (go == null)
+        {
+            throw new System.Exception("No Gameobject for key: " + key);
+        }
+
+        return go;
     }
 }

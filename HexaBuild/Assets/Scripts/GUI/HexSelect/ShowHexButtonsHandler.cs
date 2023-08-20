@@ -74,6 +74,17 @@ public class ShowHexButtonsHandler : BaseEventCallback
             );
     }
 
+    public void LoadExpandButtons(Hex hexSelected)
+    {
+        var freeSpotsAroundHex = HexGrid.instance.GetFreePlacesDirectlyAroundHex(hexSelected.HexCoordinates);   
+        var dirs = freeSpotsAroundHex.Select(freeSpot => hexSelected.HexCoordinates.GetDirectionToHex(freeSpot)).ToList();
+
+        LoadButtons(dirs,
+            setAction: (DirectionType dir, HexExpandButtonScript buttonScript) =>
+               buttonScript.SetHexValue(hexSelected, dir)
+            );
+    }
+
     public void RemoveAllButtons()
     {
         ResetActiveButtons();

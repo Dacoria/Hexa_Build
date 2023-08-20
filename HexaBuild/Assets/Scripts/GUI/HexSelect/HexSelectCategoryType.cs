@@ -2,6 +2,7 @@
 {
     StateChange,
     GainRsc,
+    Expand
 }
 
 public static class HexSelectCategoryTypeExt
@@ -14,6 +15,9 @@ public static class HexSelectCategoryTypeExt
                 return true;
             case HexSelectCategoryType.GainRsc:
                 return hex.HexStateType.Props().HasRscGains() && hex.GetComponent<RscGainBehaviour>() != null;
+            case HexSelectCategoryType.Expand:
+                return ResourceHandler.instance.HasResourcesToSpendInStock(HexExpansion.ExpansionCost()) &&
+                    HexGrid.instance.GetFreePlacesDirectlyAroundHex(hex.HexCoordinates).Count > 0;
             default:
                 throw new System.Exception("");
         }

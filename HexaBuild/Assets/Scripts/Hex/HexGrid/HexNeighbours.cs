@@ -129,4 +129,23 @@ public class HexNeighbours
 
         return hexTileNeightboursDict[hexCoordinates];
     }
+
+    public List<Vector3Int> GetFreePlacesDirectlyAroundHex(Dictionary<Vector3Int, Hex> hexTileDict, Vector3Int hexCoordinates)
+    {
+        if (!hexTileDict.ContainsKey(hexCoordinates))
+        {
+            return new List<Vector3Int>();
+        }
+
+        var result = new List<Vector3Int>();
+        foreach (var direction in Direction.GetDirectionsList(hexCoordinates.z))
+        {
+            if (!hexTileDict.ContainsKey(hexCoordinates + direction))
+            {
+                result.Add(hexCoordinates + direction);
+            }
+        }
+
+        return result;
+    }
 }

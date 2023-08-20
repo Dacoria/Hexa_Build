@@ -4,6 +4,7 @@
     public static string LAYER_MASK_UI = "UI";
 
     public static string LOAD_PATH_GO_OBJ_ON_TILE = "ObjectsOnTile";
+    public static string LOAD_PATH_GO_HEX_PREFAB = "Hex/HexPrefab";
     public static string LOAD_PATH_GO_GUI = "GUI";
 
     public static string LOAD_PATH_MATERIAL_TILE_TYPES = "Hex/HexTypeMaterials";

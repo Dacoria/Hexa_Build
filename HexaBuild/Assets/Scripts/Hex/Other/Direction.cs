@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public static class Direction
 {
@@ -53,6 +54,20 @@ public static class Direction
         }
 
         return hexFromCoor.GetNewHexCoorFromDirections(dirs);
+    }
+
+    public static DirectionType GetDirectionToHex(this Vector3Int hexFrom, Vector3Int hexTo)
+    {
+        foreach(DirectionType dir in Enum.GetValues(typeof(DirectionType)))
+        {
+            var hexToResultForDir = GetHexCoorFromDirection(hexFrom, dir);
+            if(hexToResultForDir == hexTo)
+            {
+                return dir;
+            }
+        }
+
+        throw new Exception("No direction from " + hexFrom + " to " + hexTo);
     }
 
     public static Vector3Int GetNewHexCoorFromDirections(this Vector3Int hexFromCoor, List<DirectionType> dirs)

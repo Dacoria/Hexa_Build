@@ -106,6 +106,10 @@ public class Hex : BaseEventCallback
         {
             AddRscGainObjects("BuildingScythe");
         }
+        if (HexStateLevel == 5 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Carrots)
+        {
+            AddRscGainObjects("BuildingScythe");
+        }
         if (HexStateLevel >= 101 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Stones)
         {
             // elke x opnieuw aanmaken :S

@@ -8,5 +8,5 @@ public class SoilHexStateProperty : IHexStateProperty
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.None;
     public string ButtonImageNameToGetInState => "Sand_Dirt";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Energy, 5);
-    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Trees, HexStateType.Wheats };
+    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Trees, HexStateType.Carrots };
 }

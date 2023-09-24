@@ -7,7 +7,7 @@ public class CarrotsHexStateProperty : IHexStateProperty, IRscGrowthInState, IRs
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.Carrot;
     public string ButtonImageNameToGetInState => "Carrot";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Energy, 5, RscType.Wood, 2);
-    public List<RscGrowthLevel> RscGrowthLevels => RscGrow.CreateList(1, 2, 3, 4);
+    public List<RscGrowthLevel> RscGrowthLevels => RscGrow.CreateList(1, 2, 3, 4, 5);
 
     public ResourceCostGains RscCostGainsInStatePerTurn =>
         new ResourceCostGains

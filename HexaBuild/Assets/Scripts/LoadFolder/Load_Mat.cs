@@ -14,7 +14,7 @@ public static partial class Load
     {
         get
         {
-            if (__materialTileMap == null)
+            if (__materialTileMap == null || !Application.isPlaying)
                 __materialTileMap = LoadHelper.CreateMaterialDict(materialTileList);
             
             return __materialTileMap;

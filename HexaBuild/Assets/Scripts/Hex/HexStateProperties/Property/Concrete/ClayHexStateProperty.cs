@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class ClayHexStateProperty : IHexStateProperty
 {    
     public HexStateType Type => HexStateType.Clay;
-    public HexSurfaceType Surface => HexSurfaceType.Clay_A;
+    public HexSurfaceType Surface => HexSurfaceType.Clay;
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.None;
     public string ButtonImageNameToGetInState => "Clay_A";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Stone, 10);

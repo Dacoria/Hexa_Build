@@ -2,12 +2,9 @@
 {
     Barren,
     Base,
-<<<<<<< HEAD
     Clay,
     Sand,
-=======
     Carrots,
->>>>>>> main
     Soil,
     Stones,
     Transparent,

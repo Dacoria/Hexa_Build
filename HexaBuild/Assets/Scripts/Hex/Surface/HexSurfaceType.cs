@@ -5,10 +5,10 @@ using System.Collections.Generic;
 public enum HexSurfaceType
 {   
     Barren,    
-    Clay_A,
+    Clay,
     Blue_3D_Blocks,
     Bricks,
-    Sand_A,
+    Sand,
     Flowers,
     Grass,
     Ice,
@@ -27,7 +27,7 @@ public enum HexSurfaceType
     Simple_Sand,
     Simple_Water,
     Transparant,
-    Water_A,
+    Water,
     Water_Light,
     Water_Ice_Cracked,
     Yellow_Stone,
@@ -37,9 +37,9 @@ public static class HexSurfaceExt
 {
     public static HexSurfaceType Barren() => HexSurfaceType.Barren;
     public static HexSurfaceType Soil() => HexSurfaceType.Sand_Dirt;
-    public static HexSurfaceType Sand() => HexSurfaceType.Sand_A;
-    public static HexSurfaceType Water() => HexSurfaceType.Water_A;
-    public static HexSurfaceType Clay() => HexSurfaceType.Clay_A;
+    public static HexSurfaceType Sand() => HexSurfaceType.Sand;
+    public static HexSurfaceType Water() => HexSurfaceType.Water;
+    public static HexSurfaceType Clay() => HexSurfaceType.Clay;
     public static HexSurfaceType BuildingArea() => HexSurfaceType.Light_Grey_Stone;
     public static HexSurfaceType Transparant() => HexSurfaceType.Transparant;
     public static bool IsVisible(this HexSurfaceType surfaceType) => surfaceType != Transparant();

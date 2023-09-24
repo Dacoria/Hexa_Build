@@ -2,6 +2,7 @@
 {
     Barren,
     Base,
+    Carrots,
     Soil,
     Stones,
     Transparent,

@@ -87,7 +87,7 @@ public class Hex : BaseEventCallback
         }
 
         hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
-        HexStateLevel = this.CalcHexStateLevel(); // forceert obj on tile wijziging
+        HexStateLevel = 1; // forceert obj on tile wijziging
 
         // Verplaatsen naar build buttons tzt
                 

@@ -4,6 +4,7 @@ public enum HexObjectOnTileType
     None,
     Base,
     Castle,
+    Carrot,
     Farm,
     Wheat,
     Tree,

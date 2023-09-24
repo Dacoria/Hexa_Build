@@ -7,7 +7,7 @@ public class WheatsHexStateProperty : IHexStateProperty, IRscGrowthInState, IRsc
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.Wheat;
     public string ButtonImageNameToGetInState => "Wheat";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc(RscType.Energy, 5, RscType.Wood, 2);
-    public List<RscGrowthLevel> RscGrowthLevels => RscGrow.CreateList(1, 3, 8);
+    public List<RscGrowthLevel> RscGrowthLevels => RscGrow.CreateList(1, 2, 3);
 
     public ResourceCostGains RscCostGainsInStatePerTurn =>
         new ResourceCostGains

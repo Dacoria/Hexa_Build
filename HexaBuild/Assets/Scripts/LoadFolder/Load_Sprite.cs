@@ -14,7 +14,7 @@ public static partial class Load
     {
         get
         {
-            if (__spriteMap == null)            
+            if (__spriteMap == null || !Application.isPlaying)            
                 __spriteMap = LoadHelper.CreateSpriteDict(spriteRscList);            
 
             return __spriteMap;

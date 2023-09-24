@@ -87,7 +87,7 @@ public class Hex : BaseEventCallback
         }
 
         hexSurfaceScript.HexSurfaceTypeChanged(state.Props().Surface);
-        HexStateLevel = this.CalcHexStateLevel(); // forceert obj on tile wijziging
+        HexStateLevel = 1; // forceert obj on tile wijziging
 
         // Verplaatsen naar build buttons tzt
                 
@@ -103,6 +103,10 @@ public class Hex : BaseEventCallback
             AddRscGainObjects("BuildingAxe");
         }
         if (HexStateLevel == 3 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Wheats)
+        {
+            AddRscGainObjects("BuildingScythe");
+        }
+        if (HexStateLevel == 5 && HexStateType.Props().HasRscGains() && HexStateType == HexStateType.Carrots)
         {
             AddRscGainObjects("BuildingScythe");
         }

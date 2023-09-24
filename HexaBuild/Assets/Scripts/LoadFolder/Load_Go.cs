@@ -14,7 +14,7 @@ public static partial class Load
     {
         get
         {
-            if (__goMap == null)
+            if (__goMap == null || !Application.isPlaying)
             {
                 __goMap = LoadHelper.CreateGoDict(goList);                
             }

@@ -7,5 +7,5 @@ public class BarrenHexStateProperty : IHexStateProperty
     public HexObjectOnTileType ObjectOnTile => HexObjectOnTileType.None;
     public string ButtonImageNameToGetInState => "Barren";
     public List<ResourceAmount> RscCostsToGetInState => Utils.Rsc();
-    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> { HexStateType.Soil, HexStateType.Stones };
+    List<HexStateType> IHexStateProperty.AllowedNextStateTypes => new List<HexStateType> {HexStateType.Soil, HexStateType.Sand, HexStateType.Stones, HexStateType.Water };
 }

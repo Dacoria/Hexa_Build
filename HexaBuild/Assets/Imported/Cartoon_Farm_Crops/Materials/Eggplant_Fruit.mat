@@ -133,7 +133,11 @@ Material:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
+<<<<<<< HEAD
+--- !u!114 &6215887110903746212
+=======
 --- !u!114 &57346558900404819
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
